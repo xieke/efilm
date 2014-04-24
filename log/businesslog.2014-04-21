@@ -1,0 +1,282 @@
+INFO (sand.depot.tool.system.OnlineListener:23)- create session ...................A0E7F13BDE9205E04BC06D0C6170C017
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname  system  1
+INFO (sand.depot.business.system.Employee:1256)- return 1
+INFO (sand.depot.business.system.Employee:1387)- result is 错误的用户名或密码
+INFO (sand.actionhandler.basic.LoginAH:848)- result is 错误的用户名或密码
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"system","userid":"system","isadmin":"","logincolumn":"loginname"}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 错误的用户名或密码
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /login.jsp?tipInfo=错误的用户名或密码
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.91 at Apr 21, 2014 10:54:00 AM use 137
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname  system  1
+INFO (sand.depot.business.system.Employee:1256)- return 1
+INFO (sand.depot.business.system.Employee:1387)- result is 1
+INFO (sand.actionhandler.basic.LoginAH:946)- write session  {"employee":{"loginname":"system","lastlogindate":"2014-04-21 10:54:06.457","showname":"system","userid":"system","isadmin":"","logincolumn":"loginname"}}
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"system","lastlogindate":"2014-04-21 10:54:06.457","showname":"system","userid":"system","isadmin":"","logincolumn":"loginname"}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 1
+INFO (sand.actionhandler.system.ActionHandler:2811)- is rest uri ,change dispatch type to DISPATCH_TYPE_REDIRECT
+INFO (sand.actionhandler.system.ActionHandler:2859)- redirect to /basic.HomeAH.index
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.91 at Apr 21, 2014 10:54:06 AM use 38
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /index.jsp
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.HomeAH.index 0 from 10.38.128.91 at Apr 21, 2014 10:54:06 AM use 3
+INFO (sand.actionhandler.system.ActionHandler:480)- 163  list mail tag 
+ERROR (tool.dao.QueryFactory:880)- ERROR:select modifier,creator,modifydate,keyword,createdate,remarks,bizid,id from tag where (isvalid='1' and parent_id='root')   order by orderby asc
+INFO (tool.dao.QueryFactory:1027)- sql is :   select modifier,creator,modifydate,keyword,createdate,remarks,bizid,id from tag where (isvalid='1' and parent_id='root')   order by orderby asc
+INFO (sand.actionhandler.system.ActionHandler:2888)- controllable is false
+ERROR (sand.actionhandler.system.ActionHandler:2889)- exception
+tool.dao.EditException:  can't query AbstractSysObj ---news---  it's status is disquerable
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:386)
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:319)
+	at tool.dao.QueryFactory.getInstance(QueryFactory.java:353)
+	at sand.service.news.impl.NewsServiceImpl.getTagIdsByNewsId(NewsServiceImpl.java:40)
+	at sand.service.basic.service.impl.TagServiceImpl.setChecked(TagServiceImpl.java:73)
+	at sand.service.basic.service.impl.TagServiceImpl.openAllWithSelectedTag(TagServiceImpl.java:48)
+	at sand.actionhandler.news.NewsActionHandler.toListMail(NewsActionHandler.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sand.actionhandler.system.ActionHandler.run(ActionHandler.java:2390)
+	at sand.filter.JRest4GuiceProcessor.processNormalCall(JRest4GuiceProcessor.java:305)
+	at sand.filter.JRest4GuiceProcessor.process(JRest4GuiceProcessor.java:142)
+	at sand.filter.JRest4GuiceFilter.executeFilter(JRest4GuiceFilter.java:45)
+	at sand.filter.AbstractJRest4GuiceFilter.doFilter(AbstractJRest4GuiceFilter.java:349)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:90)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:225)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:999)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:565)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:309)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.actionhandler.system.ActionHandler:2904)- error length:2991
+INFO (sand.actionhandler.system.ActionHandler:2905)- message  can't query AbstractSysObj ---news---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:3032)- _nextUrl /template/basic/msg.jsp
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /template/basic/msg.jsp?tipInfo= can't query AbstractSysObj ---news---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.NewsActionHandler.toListMail 0 from 10.38.128.91 at Apr 21, 2014 10:54:12 AM use 36
+INFO (sand.actionhandler.system.ActionHandler:2888)- controllable is false
+ERROR (sand.actionhandler.system.ActionHandler:2889)- exception
+tool.dao.EditException:  can't query AbstractSysObj ---postjob---  it's status is disquerable
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:386)
+	at sand.actionhandler.system.ActionHandler.listObj(ActionHandler.java:1273)
+	at sand.actionhandler.post.PostJobAH.list(PostJobAH.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sand.actionhandler.system.ActionHandler.run(ActionHandler.java:2390)
+	at sand.filter.JRest4GuiceProcessor.processNormalCall(JRest4GuiceProcessor.java:305)
+	at sand.filter.JRest4GuiceProcessor.process(JRest4GuiceProcessor.java:142)
+	at sand.filter.JRest4GuiceFilter.executeFilter(JRest4GuiceFilter.java:45)
+	at sand.filter.AbstractJRest4GuiceFilter.doFilter(AbstractJRest4GuiceFilter.java:349)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:90)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:225)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:999)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:565)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:309)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.actionhandler.system.ActionHandler:2904)- error length:2661
+INFO (sand.actionhandler.system.ActionHandler:2905)- message  can't query AbstractSysObj ---postjob---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:3032)- _nextUrl /template/basic/msg.jsp
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /template/basic/msg.jsp?tipInfo= can't query AbstractSysObj ---postjob---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.PostJobAH.list 0 from 10.38.128.91 at Apr 21, 2014 10:54:13 AM use 11
+ERROR (tool.dao.QueryFactory:880)- ERROR:select modifier,creator,modifydate,keyword,createdate,remarks,bizid,id from tag where (isvalid='1' and parent_id='root')   order by orderby asc
+INFO (tool.dao.QueryFactory:1027)- sql is :   select modifier,creator,modifydate,keyword,createdate,remarks,bizid,id from tag where (isvalid='1' and parent_id='root')   order by orderby asc
+INFO (sand.actionhandler.system.ActionHandler:2888)- controllable is false
+ERROR (sand.actionhandler.system.ActionHandler:2889)- exception
+tool.dao.EditException:  can't query AbstractSysObj ---news---  it's status is disquerable
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:386)
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:319)
+	at tool.dao.QueryFactory.getInstance(QueryFactory.java:353)
+	at sand.service.news.impl.NewsServiceImpl.getTagIdsByNewsId(NewsServiceImpl.java:40)
+	at sand.service.basic.service.impl.TagServiceImpl.setChecked(TagServiceImpl.java:73)
+	at sand.service.basic.service.impl.TagServiceImpl.openAllWithSelectedTag(TagServiceImpl.java:48)
+	at sand.actionhandler.basic.TagActionHandler.list(TagActionHandler.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sand.actionhandler.system.ActionHandler.run(ActionHandler.java:2390)
+	at sand.filter.JRest4GuiceProcessor.processNormalCall(JRest4GuiceProcessor.java:305)
+	at sand.filter.JRest4GuiceProcessor.process(JRest4GuiceProcessor.java:142)
+	at sand.filter.JRest4GuiceFilter.executeFilter(JRest4GuiceFilter.java:45)
+	at sand.filter.AbstractJRest4GuiceFilter.doFilter(AbstractJRest4GuiceFilter.java:349)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:90)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:225)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:999)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:565)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:309)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.actionhandler.system.ActionHandler:2904)- error length:2983
+INFO (sand.actionhandler.system.ActionHandler:2905)- message  can't query AbstractSysObj ---news---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:3032)- _nextUrl /template/basic/msg.jsp
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /template/basic/msg.jsp?tipInfo= can't query AbstractSysObj ---news---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.TagActionHandler.list 0 from 10.38.128.91 at Apr 21, 2014 10:54:16 AM use 13
+INFO (sand.actionhandler.system.ActionHandler:2888)- controllable is false
+ERROR (sand.actionhandler.system.ActionHandler:2889)- exception
+tool.dao.EditException:  can't query AbstractSysObj ---tag_rule---  it's status is disquerable
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:386)
+	at sand.actionhandler.system.ActionHandler.listObj(ActionHandler.java:1273)
+	at sand.actionhandler.system.ActionHandler.listObj(ActionHandler.java:1238)
+	at sand.actionhandler.tag.TagRuleActionHandler.list(TagRuleActionHandler.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sand.actionhandler.system.ActionHandler.run(ActionHandler.java:2390)
+	at sand.filter.JRest4GuiceProcessor.processNormalCall(JRest4GuiceProcessor.java:305)
+	at sand.filter.JRest4GuiceProcessor.process(JRest4GuiceProcessor.java:142)
+	at sand.filter.JRest4GuiceFilter.executeFilter(JRest4GuiceFilter.java:45)
+	at sand.filter.AbstractJRest4GuiceFilter.doFilter(AbstractJRest4GuiceFilter.java:349)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:90)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:225)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:999)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:565)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:309)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.actionhandler.system.ActionHandler:2904)- error length:2760
+INFO (sand.actionhandler.system.ActionHandler:2905)- message  can't query AbstractSysObj ---tag_rule---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:3032)- _nextUrl /template/basic/msg.jsp
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /template/basic/msg.jsp?tipInfo= can't query AbstractSysObj ---tag_rule---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.TagRuleActionHandler.list 0 from 10.38.128.91 at Apr 21, 2014 10:54:17 AM use 5
+INFO (sand.actionhandler.system.ActionHandler:2888)- controllable is false
+ERROR (sand.actionhandler.system.ActionHandler:2889)- exception
+tool.dao.EditException:  can't query AbstractSysObj ---dup_rule---  it's status is disquerable
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:386)
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:319)
+	at sand.actionhandler.tag.TagRuleActionHandler.showDupRule(TagRuleActionHandler.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sand.actionhandler.system.ActionHandler.run(ActionHandler.java:2390)
+	at sand.filter.JRest4GuiceProcessor.processNormalCall(JRest4GuiceProcessor.java:305)
+	at sand.filter.JRest4GuiceProcessor.process(JRest4GuiceProcessor.java:142)
+	at sand.filter.JRest4GuiceFilter.executeFilter(JRest4GuiceFilter.java:45)
+	at sand.filter.AbstractJRest4GuiceFilter.doFilter(AbstractJRest4GuiceFilter.java:349)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:90)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:225)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:999)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:565)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:309)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.actionhandler.system.ActionHandler:2904)- error length:2670
+INFO (sand.actionhandler.system.ActionHandler:2905)- message  can't query AbstractSysObj ---dup_rule---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:3032)- _nextUrl /template/basic/msg.jsp
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /template/basic/msg.jsp?tipInfo= can't query AbstractSysObj ---dup_rule---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.TagRuleActionHandler.showDupRule 0 from 10.38.128.91 at Apr 21, 2014 10:54:18 AM use 16
+ERROR (tool.dao.QueryFactory:880)- ERROR:select modifier,creator,modifydate,keyword,createdate,remarks,bizid,id from tag where (isvalid='1' and parent_id='root')   order by orderby asc
+INFO (tool.dao.QueryFactory:1027)- sql is :   select modifier,creator,modifydate,keyword,createdate,remarks,bizid,id from tag where (isvalid='1' and parent_id='root')   order by orderby asc
+INFO (sand.actionhandler.system.ActionHandler:2888)- controllable is false
+ERROR (sand.actionhandler.system.ActionHandler:2889)- exception
+tool.dao.EditException:  can't query AbstractSysObj ---news---  it's status is disquerable
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:386)
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:319)
+	at tool.dao.QueryFactory.getInstance(QueryFactory.java:353)
+	at sand.service.news.impl.NewsServiceImpl.getTagIdsByNewsId(NewsServiceImpl.java:40)
+	at sand.service.basic.service.impl.TagServiceImpl.setChecked(TagServiceImpl.java:73)
+	at sand.service.basic.service.impl.TagServiceImpl.openAllWithSelectedTag(TagServiceImpl.java:48)
+	at sand.actionhandler.news.NewsActionHandler.toList(NewsActionHandler.java:261)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sand.actionhandler.system.ActionHandler.run(ActionHandler.java:2390)
+	at sand.filter.JRest4GuiceProcessor.processNormalCall(JRest4GuiceProcessor.java:305)
+	at sand.filter.JRest4GuiceProcessor.process(JRest4GuiceProcessor.java:142)
+	at sand.filter.JRest4GuiceFilter.executeFilter(JRest4GuiceFilter.java:45)
+	at sand.filter.AbstractJRest4GuiceFilter.doFilter(AbstractJRest4GuiceFilter.java:349)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:90)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:225)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:999)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:565)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:309)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.actionhandler.system.ActionHandler:2904)- error length:2987
+INFO (sand.actionhandler.system.ActionHandler:2905)- message  can't query AbstractSysObj ---news---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:3032)- _nextUrl /template/basic/msg.jsp
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /template/basic/msg.jsp?tipInfo= can't query AbstractSysObj ---news---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.NewsActionHandler.toList 0 from 10.38.128.91 at Apr 21, 2014 10:54:20 AM use 9
+INFO (sand.depot.tool.system.OnlineListener:27)- begin  sessionDestroyed .........................A0E7F13BDE9205E04BC06D0C6170C017
+INFO (sand.depot.tool.system.OnlineListener:42)- exit session ...................system

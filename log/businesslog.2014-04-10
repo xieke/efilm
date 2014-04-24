@@ -1,0 +1,780 @@
+INFO (sand.depot.servlet.system.ContextListener:157)- schema basic
+INFO (sand.depot.servlet.system.ContextListener:163)- sschema 1
+INFO (sand.depot.servlet.system.ContextListener:181)- server name is front
+INFO (sand.basic.Global:92)- 开始注册
+INFO (sand.basic.GlobalConfig:57)- in is java.io.ByteArrayInputStream@5c09624
+INFO (sand.basic.GlobalConfig:92)- read property registed  value: 1
+INFO (sand.basic.GlobalConfig:92)- read property maxonline  value: 500
+INFO (sand.basic.GlobalConfig:92)- read property regdate  value: 1366128350724
+INFO (sand.basic.GlobalConfig:92)- read property registed  value: 1
+INFO (sand.basic.GlobalConfig:92)- read property regname  value: HNA
+INFO (sand.basic.GlobalConfig:92)- read property modules  value: 1000000000
+INFO (sand.basic.Global:104)- basic  1
+INFO (sand.basic.Global:104)- product  0
+INFO (sand.basic.Global:104)- workflow  0
+INFO (sand.basic.Global:104)- meeting  0
+INFO (sand.basic.Global:104)- taskta  0
+INFO (sand.basic.Global:104)- project  0
+INFO (sand.basic.Global:104)- require  0
+INFO (sand.basic.Global:104)- test  0
+INFO (sand.basic.Global:104)- system  0
+INFO (sand.basic.Global:104)- kbm  0
+INFO (sand.basic.Global:108)- 已经注册 ，返回
+INFO (tool.dao.DBPool:244)- Initializing DBPool....
+INFO (sand.depot.servlet.system.ContextListener:249)- load schema:basic
+INFO (org.springframework.web.context.ContextLoader:272)- Root WebApplicationContext: initialization started
+INFO (org.springframework.web.context.support.XmlWebApplicationContext:508)- Refreshing Root WebApplicationContext: startup date [Thu Apr 10 14:32:07 CST 2014]; root of context hierarchy
+INFO (org.springframework.beans.factory.xml.XmlBeanDefinitionReader:315)- Loading XML bean definitions from URL [file:/root/efilm/build/WEB-INF/classes/spring.context.xml]
+INFO (org.springframework.beans.factory.support.DefaultListableBeanFactory:577)- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c3cbb4b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tagService,newsService,tagRuleService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO (org.springframework.web.context.ContextLoader:301)- Root WebApplicationContext: initialization completed in 332 ms
+INFO (org.springframework.web.context.support.XmlWebApplicationContext:1033)- Closing Root WebApplicationContext: startup date [Thu Apr 10 14:32:07 CST 2014]; root of context hierarchy
+INFO (org.springframework.beans.factory.support.DefaultListableBeanFactory:433)- Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c3cbb4b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tagService,newsService,tagRuleService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO (sand.depot.job.QuartzManager:219)- remove all quartz jobs ..........
+ERROR (tool.dao.JDO:162)- 
+java.lang.NullPointerException
+	at tool.dao.DBPool.getConnection(DBPool.java:426)
+	at tool.dao.JDO.<init>(JDO.java:159)
+	at tool.dao.JDO.<init>(JDO.java:145)
+	at sand.depot.job.QuartzManager.removeAllJob(QuartzManager.java:221)
+	at sand.depot.servlet.system.ContextListener.contextDestroyed(ContextListener.java:393)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4819)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5466)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:871)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:615)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:649)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1585)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.depot.servlet.system.ContextListener:157)- schema basic
+INFO (sand.depot.servlet.system.ContextListener:163)- sschema 1
+INFO (sand.depot.servlet.system.ContextListener:181)- server name is front
+INFO (sand.basic.Global:92)- 开始注册
+INFO (sand.basic.GlobalConfig:57)- in is java.io.ByteArrayInputStream@44775121
+INFO (sand.basic.GlobalConfig:92)- read property registed  value: 1
+INFO (sand.basic.GlobalConfig:92)- read property maxonline  value: 500
+INFO (sand.basic.GlobalConfig:92)- read property regdate  value: 1366128350724
+INFO (sand.basic.GlobalConfig:92)- read property registed  value: 1
+INFO (sand.basic.GlobalConfig:92)- read property regname  value: HNA
+INFO (sand.basic.GlobalConfig:92)- read property modules  value: 1000000000
+INFO (sand.basic.Global:104)- basic  1
+INFO (sand.basic.Global:104)- product  0
+INFO (sand.basic.Global:104)- workflow  0
+INFO (sand.basic.Global:104)- meeting  0
+INFO (sand.basic.Global:104)- taskta  0
+INFO (sand.basic.Global:104)- project  0
+INFO (sand.basic.Global:104)- require  0
+INFO (sand.basic.Global:104)- test  0
+INFO (sand.basic.Global:104)- system  0
+INFO (sand.basic.Global:104)- kbm  0
+INFO (sand.basic.Global:108)- 已经注册 ，返回
+INFO (tool.dao.DBPool:244)- Initializing DBPool....
+INFO (sand.depot.servlet.system.ContextListener:249)- load schema:basic
+INFO (org.springframework.web.context.ContextLoader:272)- Root WebApplicationContext: initialization started
+INFO (org.springframework.web.context.support.XmlWebApplicationContext:508)- Refreshing Root WebApplicationContext: startup date [Thu Apr 10 14:32:49 CST 2014]; root of context hierarchy
+INFO (org.springframework.beans.factory.xml.XmlBeanDefinitionReader:315)- Loading XML bean definitions from URL [file:/root/efilm/build/WEB-INF/classes/spring.context.xml]
+INFO (org.springframework.beans.factory.support.DefaultListableBeanFactory:577)- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@38834cfb: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tagService,newsService,tagRuleService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO (org.springframework.web.context.ContextLoader:301)- Root WebApplicationContext: initialization completed in 356 ms
+INFO (org.springframework.web.context.support.XmlWebApplicationContext:1033)- Closing Root WebApplicationContext: startup date [Thu Apr 10 14:32:49 CST 2014]; root of context hierarchy
+INFO (org.springframework.beans.factory.support.DefaultListableBeanFactory:433)- Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@38834cfb: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tagService,newsService,tagRuleService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO (sand.depot.job.QuartzManager:219)- remove all quartz jobs ..........
+ERROR (tool.dao.JDO:162)- 
+java.lang.NullPointerException
+	at tool.dao.DBPool.getConnection(DBPool.java:426)
+	at tool.dao.JDO.<init>(JDO.java:159)
+	at tool.dao.JDO.<init>(JDO.java:145)
+	at sand.depot.job.QuartzManager.removeAllJob(QuartzManager.java:221)
+	at sand.depot.servlet.system.ContextListener.contextDestroyed(ContextListener.java:393)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4819)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5466)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:871)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:615)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:649)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1585)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.depot.servlet.system.ContextListener:157)- schema basic
+INFO (sand.depot.servlet.system.ContextListener:163)- sschema 1
+INFO (sand.depot.servlet.system.ContextListener:181)- server name is front
+INFO (sand.basic.Global:92)- 开始注册
+INFO (sand.basic.GlobalConfig:57)- in is java.io.ByteArrayInputStream@4ff217ec
+INFO (sand.basic.GlobalConfig:92)- read property registed  value: 1
+INFO (sand.basic.GlobalConfig:92)- read property maxonline  value: 500
+INFO (sand.basic.GlobalConfig:92)- read property regdate  value: 1366128350724
+INFO (sand.basic.GlobalConfig:92)- read property registed  value: 1
+INFO (sand.basic.GlobalConfig:92)- read property regname  value: HNA
+INFO (sand.basic.GlobalConfig:92)- read property modules  value: 1000000000
+INFO (sand.basic.Global:104)- basic  1
+INFO (sand.basic.Global:104)- product  0
+INFO (sand.basic.Global:104)- workflow  0
+INFO (sand.basic.Global:104)- meeting  0
+INFO (sand.basic.Global:104)- taskta  0
+INFO (sand.basic.Global:104)- project  0
+INFO (sand.basic.Global:104)- require  0
+INFO (sand.basic.Global:104)- test  0
+INFO (sand.basic.Global:104)- system  0
+INFO (sand.basic.Global:104)- kbm  0
+INFO (sand.basic.Global:108)- 已经注册 ，返回
+INFO (tool.dao.DBPool:244)- Initializing DBPool....
+INFO (sand.depot.servlet.system.ContextListener:249)- load schema:basic
+INFO (org.springframework.web.context.ContextLoader:272)- Root WebApplicationContext: initialization started
+INFO (org.springframework.web.context.support.XmlWebApplicationContext:508)- Refreshing Root WebApplicationContext: startup date [Thu Apr 10 14:34:38 CST 2014]; root of context hierarchy
+INFO (org.springframework.beans.factory.xml.XmlBeanDefinitionReader:315)- Loading XML bean definitions from URL [file:/root/efilm/build/WEB-INF/classes/spring.context.xml]
+INFO (org.springframework.beans.factory.support.DefaultListableBeanFactory:577)- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2c1533c8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tagService,newsService,tagRuleService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO (org.springframework.web.context.ContextLoader:301)- Root WebApplicationContext: initialization completed in 316 ms
+INFO (org.springframework.web.context.support.XmlWebApplicationContext:1033)- Closing Root WebApplicationContext: startup date [Thu Apr 10 14:34:38 CST 2014]; root of context hierarchy
+INFO (org.springframework.beans.factory.support.DefaultListableBeanFactory:433)- Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2c1533c8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tagService,newsService,tagRuleService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO (sand.depot.job.QuartzManager:219)- remove all quartz jobs ..........
+ERROR (tool.dao.JDO:162)- 
+java.lang.NullPointerException
+	at tool.dao.DBPool.getConnection(DBPool.java:426)
+	at tool.dao.JDO.<init>(JDO.java:159)
+	at tool.dao.JDO.<init>(JDO.java:145)
+	at sand.depot.job.QuartzManager.removeAllJob(QuartzManager.java:221)
+	at sand.depot.servlet.system.ContextListener.contextDestroyed(ContextListener.java:393)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4819)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5466)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:871)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:615)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1099)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1621)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.depot.servlet.system.ContextListener:157)- schema basic
+INFO (sand.depot.servlet.system.ContextListener:163)- sschema 1
+INFO (sand.depot.servlet.system.ContextListener:181)- server name is front
+INFO (sand.basic.Global:92)- 开始注册
+INFO (sand.basic.GlobalConfig:57)- in is java.io.ByteArrayInputStream@31be0369
+INFO (sand.basic.GlobalConfig:92)- read property registed  value: 1
+INFO (sand.basic.GlobalConfig:92)- read property maxonline  value: 500
+INFO (sand.basic.GlobalConfig:92)- read property regdate  value: 1366128350724
+INFO (sand.basic.GlobalConfig:92)- read property registed  value: 1
+INFO (sand.basic.GlobalConfig:92)- read property regname  value: HNA
+INFO (sand.basic.GlobalConfig:92)- read property modules  value: 1000000000
+INFO (sand.basic.Global:104)- basic  1
+INFO (sand.basic.Global:104)- product  0
+INFO (sand.basic.Global:104)- workflow  0
+INFO (sand.basic.Global:104)- meeting  0
+INFO (sand.basic.Global:104)- taskta  0
+INFO (sand.basic.Global:104)- project  0
+INFO (sand.basic.Global:104)- require  0
+INFO (sand.basic.Global:104)- test  0
+INFO (sand.basic.Global:104)- system  0
+INFO (sand.basic.Global:104)- kbm  0
+INFO (sand.basic.Global:108)- 已经注册 ，返回
+INFO (tool.dao.DBPool:244)- Initializing DBPool....
+INFO (sand.depot.servlet.system.ContextListener:249)- load schema:basic
+INFO (org.springframework.web.context.ContextLoader:272)- Root WebApplicationContext: initialization started
+INFO (org.springframework.web.context.support.XmlWebApplicationContext:508)- Refreshing Root WebApplicationContext: startup date [Thu Apr 10 14:34:41 CST 2014]; root of context hierarchy
+INFO (org.springframework.beans.factory.xml.XmlBeanDefinitionReader:315)- Loading XML bean definitions from URL [file:/root/efilm/build/WEB-INF/classes/spring.context.xml]
+INFO (org.springframework.beans.factory.support.DefaultListableBeanFactory:577)- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@520b1684: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tagService,newsService,tagRuleService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO (org.springframework.web.context.ContextLoader:301)- Root WebApplicationContext: initialization completed in 267 ms
+INFO (org.springframework.web.context.support.XmlWebApplicationContext:1033)- Closing Root WebApplicationContext: startup date [Thu Apr 10 14:34:41 CST 2014]; root of context hierarchy
+INFO (org.springframework.beans.factory.support.DefaultListableBeanFactory:433)- Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@520b1684: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tagService,newsService,tagRuleService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO (sand.depot.job.QuartzManager:219)- remove all quartz jobs ..........
+ERROR (tool.dao.JDO:162)- 
+java.lang.NullPointerException
+	at tool.dao.DBPool.getConnection(DBPool.java:426)
+	at tool.dao.JDO.<init>(JDO.java:159)
+	at tool.dao.JDO.<init>(JDO.java:145)
+	at sand.depot.job.QuartzManager.removeAllJob(QuartzManager.java:221)
+	at sand.depot.servlet.system.ContextListener.contextDestroyed(ContextListener.java:393)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4819)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5466)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:871)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:615)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1099)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1621)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.depot.servlet.system.ContextListener:157)- schema basic
+INFO (sand.depot.servlet.system.ContextListener:163)- sschema 1
+INFO (sand.depot.servlet.system.ContextListener:181)- server name is front
+INFO (sand.basic.Global:92)- 开始注册
+INFO (sand.basic.GlobalConfig:57)- in is java.io.ByteArrayInputStream@4e8890da
+INFO (sand.basic.GlobalConfig:92)- read property registed  value: 1
+INFO (sand.basic.GlobalConfig:92)- read property maxonline  value: 500
+INFO (sand.basic.GlobalConfig:92)- read property regdate  value: 1366128350724
+INFO (sand.basic.GlobalConfig:92)- read property registed  value: 1
+INFO (sand.basic.GlobalConfig:92)- read property regname  value: HNA
+INFO (sand.basic.GlobalConfig:92)- read property modules  value: 1000000000
+INFO (sand.basic.Global:104)- basic  1
+INFO (sand.basic.Global:104)- product  0
+INFO (sand.basic.Global:104)- workflow  0
+INFO (sand.basic.Global:104)- meeting  0
+INFO (sand.basic.Global:104)- taskta  0
+INFO (sand.basic.Global:104)- project  0
+INFO (sand.basic.Global:104)- require  0
+INFO (sand.basic.Global:104)- test  0
+INFO (sand.basic.Global:104)- system  0
+INFO (sand.basic.Global:104)- kbm  0
+INFO (sand.basic.Global:108)- 已经注册 ，返回
+INFO (tool.dao.DBPool:244)- Initializing DBPool....
+INFO (sand.depot.servlet.system.ContextListener:249)- load schema:basic
+INFO (tool.dao.SingletonStructure:409)- pks com.mysql.jdbc.JDBC4ResultSet@6b96bac4
+INFO (tool.dao.SingletonStructure:450)- 1  account
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 2  advertise
+INFO (tool.dao.SingletonStructure:450)- 3  annex
+INFO (tool.dao.SingletonStructure:450)- 4  article
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 5  attestation
+INFO (tool.dao.SingletonStructure:450)- 6  billno
+INFO (tool.dao.SingletonStructure:450)- 7  card
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 8  department
+INFO (tool.dao.SingletonStructure:450)- 9  dictionary
+INFO (tool.dao.SingletonStructure:450)- 10  document
+INFO (tool.dao.SingletonStructure:450)- 11  employee
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 12  erplog
+INFO (tool.dao.SingletonStructure:450)- 13  exception
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 14  function
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 15  item
+INFO (tool.dao.SingletonStructure:450)- 16  link_desktop
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 17  message
+INFO (tool.dao.SingletonStructure:248)- default is 0
+INFO (tool.dao.SingletonStructure:248)- default is 0
+INFO (tool.dao.SingletonStructure:248)- default is 0
+INFO (tool.dao.SingletonStructure:248)- default is 0
+INFO (tool.dao.SingletonStructure:450)- 18  module
+INFO (tool.dao.SingletonStructure:450)- 19  my_plugin_config
+INFO (tool.dao.SingletonStructure:248)- default is 0
+INFO (tool.dao.SingletonStructure:450)- 20  newcomments
+INFO (tool.dao.SingletonStructure:450)- 21  plugin_config
+INFO (tool.dao.SingletonStructure:248)- default is 0
+INFO (tool.dao.SingletonStructure:450)- 22  re_friend
+INFO (tool.dao.SingletonStructure:450)- 23  re_fun_role
+INFO (tool.dao.SingletonStructure:450)- 24  re_general
+INFO (tool.dao.SingletonStructure:450)- 25  re_module_role
+INFO (tool.dao.SingletonStructure:450)- 26  re_team_user
+INFO (tool.dao.SingletonStructure:450)- 27  re_user_link_desktop
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 28  re_user_role
+INFO (tool.dao.SingletonStructure:450)- 29  role
+INFO (tool.dao.SingletonStructure:450)- 30  seedhouse
+INFO (tool.dao.SingletonStructure:450)- 31  tag
+INFO (tool.dao.SingletonStructure:450)- 32  task
+INFO (tool.dao.SingletonStructure:450)- 33  tasklog
+INFO (tool.dao.SingletonStructure:450)- 34  team
+INFO (tool.dao.SingletonStructure:450)- 35  tel_message
+INFO (tool.dao.SingletonStructure:450)- 36  whatyoudo
+INFO (tool.dao.SingletonStructure:450)- 37  v_dictionary
+INFO (sand.depot.servlet.system.ContextListener:254)- main schema is basic
+INFO (sand.depot.servlet.system.ContextListener:290)- Initialization finished Thu Apr 10 14:37:35 CST 2014
+INFO (sand.depot.job.QuartzManager:98)- add all local quartz jobs ..........
+INFO (sand.depot.job.QuartzManager:334)- add job finished
+INFO (org.springframework.web.context.ContextLoader:272)- Root WebApplicationContext: initialization started
+INFO (org.springframework.web.context.support.XmlWebApplicationContext:508)- Refreshing Root WebApplicationContext: startup date [Thu Apr 10 14:37:35 CST 2014]; root of context hierarchy
+INFO (org.springframework.beans.factory.xml.XmlBeanDefinitionReader:315)- Loading XML bean definitions from URL [file:/root/efilm/build/WEB-INF/classes/spring.context.xml]
+INFO (org.springframework.beans.factory.support.DefaultListableBeanFactory:577)- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d7e60a1: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tagService,newsService,tagRuleService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO (org.springframework.web.context.ContextLoader:301)- Root WebApplicationContext: initialization completed in 341 ms
+ERROR (tool.dao.QueryFactory:880)- ERROR:select dicid,odb,name,id from v_dictionary where ( (1=1) )  and  v_dictionary.dicid  =  ?   order by odb
+INFO (tool.dao.QueryFactory:1027)- sql is :   select dicid,odb,name,id from v_dictionary where ( (1=1) )  and  v_dictionary.dicid  =  ?   order by odb
+INFO (sand.depot.tool.system.OnlineListener:23)- create session ...................7BE7A46C8F67D93CBCF08ED257A2B611
+INFO (sand.depot.tool.system.OnlineListener:23)- create session ...................ECE43DCBD9AA9F52B19CA3BC7F09CA58
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname  system  0
+INFO (sand.depot.business.system.Employee:1256)- return 0
+INFO (sand.depot.business.system.Employee:1266)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.telno  =  ? 
+INFO (sand.depot.business.system.Employee:1267)- telno  system  0
+INFO (sand.depot.business.system.Employee:1275)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.email  =  ? 
+INFO (sand.depot.business.system.Employee:1276)- email  system  0
+INFO (sand.actionhandler.basic.LoginAH:848)- result is 无此用户
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"system","password":"sand"}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 无此用户
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /login.jsp?tipInfo=无此用户
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.144 at Apr 10, 2014 2:42:58 PM use 78
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname  system  0
+INFO (sand.depot.business.system.Employee:1256)- return 0
+INFO (sand.depot.business.system.Employee:1266)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.telno  =  ? 
+INFO (sand.depot.business.system.Employee:1267)- telno  system  0
+INFO (sand.depot.business.system.Employee:1275)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.email  =  ? 
+INFO (sand.depot.business.system.Employee:1276)- email  system  0
+INFO (sand.actionhandler.basic.LoginAH:848)- result is 无此用户
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"system","password":"sand"}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 无此用户
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /login.jsp?tipInfo=无此用户
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.91 at Apr 10, 2014 2:43:19 PM use 20
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname  system  0
+INFO (sand.depot.business.system.Employee:1256)- return 0
+INFO (sand.depot.business.system.Employee:1266)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.telno  =  ? 
+INFO (sand.depot.business.system.Employee:1267)- telno  system  0
+INFO (sand.depot.business.system.Employee:1275)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.email  =  ? 
+INFO (sand.depot.business.system.Employee:1276)- email  system  0
+INFO (sand.actionhandler.basic.LoginAH:848)- result is 无此用户
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"system","password":"sand"}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 无此用户
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /login.jsp?tipInfo=无此用户
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.91 at Apr 10, 2014 2:46:03 PM use 18
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname  system  0
+INFO (sand.depot.business.system.Employee:1256)- return 0
+INFO (sand.depot.business.system.Employee:1266)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.telno  =  ? 
+INFO (sand.depot.business.system.Employee:1267)- telno  system  0
+INFO (sand.depot.business.system.Employee:1275)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.email  =  ? 
+INFO (sand.depot.business.system.Employee:1276)- email  system  0
+INFO (sand.actionhandler.basic.LoginAH:848)- result is 无此用户
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"system","password":"sand"}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 无此用户
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /login.jsp?tipInfo=无此用户
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.91 at Apr 10, 2014 2:46:12 PM use 19
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname  system  0
+INFO (sand.depot.business.system.Employee:1256)- return 0
+INFO (sand.depot.business.system.Employee:1266)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.telno  =  ? 
+INFO (sand.depot.business.system.Employee:1267)- telno  system  0
+INFO (sand.depot.business.system.Employee:1275)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.email  =  ? 
+INFO (sand.depot.business.system.Employee:1276)- email  system  0
+INFO (sand.actionhandler.basic.LoginAH:848)- result is 无此用户
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"system","password":"sand"}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 无此用户
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /login.jsp?tipInfo=无此用户
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.91 at Apr 10, 2014 2:47:17 PM use 19
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname    0
+INFO (sand.depot.business.system.Employee:1256)- return 0
+INFO (sand.depot.business.system.Employee:1266)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.telno  =  ? 
+INFO (sand.depot.business.system.Employee:1267)- telno    0
+INFO (sand.depot.business.system.Employee:1275)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.email  =  ? 
+INFO (sand.depot.business.system.Employee:1276)- email    0
+INFO (sand.actionhandler.basic.LoginAH:848)- result is 无此用户
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"","password":""}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 无此用户
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /login.jsp?tipInfo=无此用户
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.91 at Apr 10, 2014 2:47:18 PM use 23
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname    0
+INFO (sand.depot.business.system.Employee:1256)- return 0
+INFO (sand.depot.business.system.Employee:1266)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.telno  =  ? 
+INFO (sand.depot.business.system.Employee:1267)- telno    0
+INFO (sand.depot.business.system.Employee:1275)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.email  =  ? 
+INFO (sand.depot.business.system.Employee:1276)- email    0
+INFO (sand.actionhandler.basic.LoginAH:848)- result is 无此用户
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"","password":""}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 无此用户
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /login.jsp?tipInfo=无此用户
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.91 at Apr 10, 2014 2:47:18 PM use 16
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname    0
+INFO (sand.depot.business.system.Employee:1256)- return 0
+INFO (sand.depot.business.system.Employee:1266)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.telno  =  ? 
+INFO (sand.depot.business.system.Employee:1267)- telno    0
+INFO (sand.depot.business.system.Employee:1275)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.email  =  ? 
+INFO (sand.depot.business.system.Employee:1276)- email    0
+INFO (sand.actionhandler.basic.LoginAH:848)- result is 无此用户
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"","password":""}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 无此用户
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /login.jsp?tipInfo=无此用户
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.91 at Apr 10, 2014 2:47:19 PM use 16
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname    0
+INFO (sand.depot.business.system.Employee:1256)- return 0
+INFO (sand.depot.business.system.Employee:1266)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.telno  =  ? 
+INFO (sand.depot.business.system.Employee:1267)- telno    0
+INFO (sand.depot.business.system.Employee:1275)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.email  =  ? 
+INFO (sand.depot.business.system.Employee:1276)- email    0
+INFO (sand.actionhandler.basic.LoginAH:848)- result is 无此用户
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"","password":""}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 无此用户
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /login.jsp?tipInfo=无此用户
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.91 at Apr 10, 2014 2:47:19 PM use 17
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname    0
+INFO (sand.depot.business.system.Employee:1256)- return 0
+INFO (sand.depot.business.system.Employee:1266)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.telno  =  ? 
+INFO (sand.depot.business.system.Employee:1267)- telno    0
+INFO (sand.depot.business.system.Employee:1275)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.email  =  ? 
+INFO (sand.depot.business.system.Employee:1276)- email    0
+INFO (sand.actionhandler.basic.LoginAH:848)- result is 无此用户
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"","password":""}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 无此用户
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /login.jsp?tipInfo=无此用户
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.91 at Apr 10, 2014 2:48:07 PM use 17
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname  system  0
+INFO (sand.depot.business.system.Employee:1256)- return 0
+INFO (sand.depot.business.system.Employee:1266)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.telno  =  ? 
+INFO (sand.depot.business.system.Employee:1267)- telno  system  0
+INFO (sand.depot.business.system.Employee:1275)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.email  =  ? 
+INFO (sand.depot.business.system.Employee:1276)- email  system  0
+INFO (sand.actionhandler.basic.LoginAH:848)- result is 无此用户
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"system","password":"sand"}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 无此用户
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /login.jsp?tipInfo=无此用户
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.91 at Apr 10, 2014 2:48:23 PM use 16
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname  system  1
+INFO (sand.depot.business.system.Employee:1256)- return 1
+INFO (sand.depot.business.system.Employee:1387)- result is 1
+INFO (sand.actionhandler.basic.LoginAH:946)- write session  {"employee":{"loginname":"system","lastlogindate":"2014-04-10 14:50:06.965","showname":"system","userid":"system","isadmin":"","logincolumn":"loginname"}}
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"system","lastlogindate":"2014-04-10 14:50:06.965","showname":"system","userid":"system","isadmin":"","logincolumn":"loginname"}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 1
+INFO (sand.actionhandler.system.ActionHandler:2811)- is rest uri ,change dispatch type to DISPATCH_TYPE_REDIRECT
+INFO (sand.actionhandler.system.ActionHandler:2859)- redirect to /basic.HomeAH.index
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.91 at Apr 10, 2014 2:50:06 PM use 226
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /index.jsp
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.HomeAH.index 0 from 10.38.128.91 at Apr 10, 2014 2:50:07 PM use 67
+ERROR (tool.dao.QueryFactory:880)- ERROR:select modifier,creator,modifydate,keyword,createdate,remarks,bizid,id from tag where (isvalid='1' and parent_id='root')   order by orderby asc
+INFO (tool.dao.QueryFactory:1027)- sql is :   select modifier,creator,modifydate,keyword,createdate,remarks,bizid,id from tag where (isvalid='1' and parent_id='root')   order by orderby asc
+INFO (sand.actionhandler.system.ActionHandler:3072)- rollback
+INFO (sand.actionhandler.system.ActionHandler:2888)- controllable is false
+ERROR (sand.actionhandler.system.ActionHandler:2889)- exception
+tool.dao.EditException:  can't query AbstractSysObj ---news---  it's status is disquerable
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:386)
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:319)
+	at tool.dao.QueryFactory.getInstance(QueryFactory.java:353)
+	at sand.service.news.impl.NewsServiceImpl.getTagIdsByNewsId(NewsServiceImpl.java:40)
+	at sand.service.basic.service.impl.TagServiceImpl.setChecked(TagServiceImpl.java:73)
+	at sand.service.basic.service.impl.TagServiceImpl.openAllWithSelectedTag(TagServiceImpl.java:48)
+	at sand.actionhandler.basic.TagActionHandler.list(TagActionHandler.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sand.actionhandler.system.ActionHandler.run(ActionHandler.java:2390)
+	at sand.filter.JRest4GuiceProcessor.processNormalCall(JRest4GuiceProcessor.java:305)
+	at sand.filter.JRest4GuiceProcessor.process(JRest4GuiceProcessor.java:142)
+	at sand.filter.JRest4GuiceFilter.executeFilter(JRest4GuiceFilter.java:45)
+	at sand.filter.AbstractJRest4GuiceFilter.doFilter(AbstractJRest4GuiceFilter.java:349)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:90)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:225)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:999)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:565)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:309)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.actionhandler.system.ActionHandler:2904)- error length:2983
+INFO (sand.actionhandler.system.ActionHandler:2905)- message  can't query AbstractSysObj ---news---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:3032)- _nextUrl /template/basic/msg.jsp
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /template/basic/msg.jsp?tipInfo= can't query AbstractSysObj ---news---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.TagActionHandler.list 0 from 10.38.128.91 at Apr 10, 2014 2:50:10 PM use 148
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname  system  1
+INFO (sand.depot.business.system.Employee:1256)- return 1
+INFO (sand.depot.business.system.Employee:1387)- result is 1
+INFO (sand.actionhandler.basic.LoginAH:946)- write session  {"employee":{"loginname":"system","lastlogindate":"2014-04-10 14:50:22.627","showname":"system","userid":"system","isadmin":"","logincolumn":"loginname"}}
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"system","lastlogindate":"2014-04-10 14:50:22.627","showname":"system","userid":"system","isadmin":"","logincolumn":"loginname"}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 1
+INFO (sand.actionhandler.system.ActionHandler:2811)- is rest uri ,change dispatch type to DISPATCH_TYPE_REDIRECT
+INFO (sand.actionhandler.system.ActionHandler:2859)- redirect to /basic.HomeAH.index
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.144 at Apr 10, 2014 2:50:22 PM use 17
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /index.jsp
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.HomeAH.index 0 from 10.38.128.144 at Apr 10, 2014 2:50:22 PM use 14
+ERROR (tool.dao.QueryFactory:880)- ERROR:select modifier,creator,modifydate,keyword,createdate,remarks,bizid,id from tag where (isvalid='1' and parent_id='root')   order by orderby asc
+INFO (tool.dao.QueryFactory:1027)- sql is :   select modifier,creator,modifydate,keyword,createdate,remarks,bizid,id from tag where (isvalid='1' and parent_id='root')   order by orderby asc
+INFO (sand.actionhandler.system.ActionHandler:2888)- controllable is false
+ERROR (sand.actionhandler.system.ActionHandler:2889)- exception
+tool.dao.EditException:  can't query AbstractSysObj ---news---  it's status is disquerable
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:386)
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:319)
+	at tool.dao.QueryFactory.getInstance(QueryFactory.java:353)
+	at sand.service.news.impl.NewsServiceImpl.getTagIdsByNewsId(NewsServiceImpl.java:40)
+	at sand.service.basic.service.impl.TagServiceImpl.setChecked(TagServiceImpl.java:73)
+	at sand.service.basic.service.impl.TagServiceImpl.openAllWithSelectedTag(TagServiceImpl.java:48)
+	at sand.actionhandler.basic.TagActionHandler.list(TagActionHandler.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sand.actionhandler.system.ActionHandler.run(ActionHandler.java:2390)
+	at sand.filter.JRest4GuiceProcessor.processNormalCall(JRest4GuiceProcessor.java:305)
+	at sand.filter.JRest4GuiceProcessor.process(JRest4GuiceProcessor.java:142)
+	at sand.filter.JRest4GuiceFilter.executeFilter(JRest4GuiceFilter.java:45)
+	at sand.filter.AbstractJRest4GuiceFilter.doFilter(AbstractJRest4GuiceFilter.java:349)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:90)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:225)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:999)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:565)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:309)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.actionhandler.system.ActionHandler:2904)- error length:2983
+INFO (sand.actionhandler.system.ActionHandler:2905)- message  can't query AbstractSysObj ---news---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:3032)- _nextUrl /template/basic/msg.jsp
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /template/basic/msg.jsp?tipInfo= can't query AbstractSysObj ---news---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.TagActionHandler.list 0 from 10.38.128.144 at Apr 10, 2014 2:50:37 PM use 14
+INFO (sand.actionhandler.system.ActionHandler:2888)- controllable is false
+ERROR (sand.actionhandler.system.ActionHandler:2889)- exception
+tool.dao.EditException:  can't query AbstractSysObj ---tag_rule---  it's status is disquerable
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:386)
+	at sand.actionhandler.system.ActionHandler.listObj(ActionHandler.java:1273)
+	at sand.actionhandler.system.ActionHandler.listObj(ActionHandler.java:1238)
+	at sand.actionhandler.tag.TagRuleActionHandler.list(TagRuleActionHandler.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sand.actionhandler.system.ActionHandler.run(ActionHandler.java:2390)
+	at sand.filter.JRest4GuiceProcessor.processNormalCall(JRest4GuiceProcessor.java:305)
+	at sand.filter.JRest4GuiceProcessor.process(JRest4GuiceProcessor.java:142)
+	at sand.filter.JRest4GuiceFilter.executeFilter(JRest4GuiceFilter.java:45)
+	at sand.filter.AbstractJRest4GuiceFilter.doFilter(AbstractJRest4GuiceFilter.java:349)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:90)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:225)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:999)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:565)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:309)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.actionhandler.system.ActionHandler:2904)- error length:2760
+INFO (sand.actionhandler.system.ActionHandler:2905)- message  can't query AbstractSysObj ---tag_rule---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:3032)- _nextUrl /template/basic/msg.jsp
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /template/basic/msg.jsp?tipInfo= can't query AbstractSysObj ---tag_rule---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.TagRuleActionHandler.list 0 from 10.38.128.144 at Apr 10, 2014 2:50:40 PM use 8
+ERROR (tool.dao.QueryFactory:880)- ERROR:select modifier,creator,modifydate,keyword,createdate,remarks,bizid,id from tag where (isvalid='1' and parent_id='root')   order by orderby asc
+INFO (tool.dao.QueryFactory:1027)- sql is :   select modifier,creator,modifydate,keyword,createdate,remarks,bizid,id from tag where (isvalid='1' and parent_id='root')   order by orderby asc
+INFO (sand.actionhandler.system.ActionHandler:2888)- controllable is false
+ERROR (sand.actionhandler.system.ActionHandler:2889)- exception
+tool.dao.EditException:  can't query AbstractSysObj ---news---  it's status is disquerable
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:386)
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:319)
+	at tool.dao.QueryFactory.getInstance(QueryFactory.java:353)
+	at sand.service.news.impl.NewsServiceImpl.getTagIdsByNewsId(NewsServiceImpl.java:40)
+	at sand.service.basic.service.impl.TagServiceImpl.setChecked(TagServiceImpl.java:73)
+	at sand.service.basic.service.impl.TagServiceImpl.openAllWithSelectedTag(TagServiceImpl.java:48)
+	at sand.actionhandler.basic.TagActionHandler.list(TagActionHandler.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sand.actionhandler.system.ActionHandler.run(ActionHandler.java:2390)
+	at sand.filter.JRest4GuiceProcessor.processNormalCall(JRest4GuiceProcessor.java:305)
+	at sand.filter.JRest4GuiceProcessor.process(JRest4GuiceProcessor.java:142)
+	at sand.filter.JRest4GuiceFilter.executeFilter(JRest4GuiceFilter.java:45)
+	at sand.filter.AbstractJRest4GuiceFilter.doFilter(AbstractJRest4GuiceFilter.java:349)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:90)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:225)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:999)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:565)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:309)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.actionhandler.system.ActionHandler:2904)- error length:2983
+INFO (sand.actionhandler.system.ActionHandler:2905)- message  can't query AbstractSysObj ---news---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:3032)- _nextUrl /template/basic/msg.jsp
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /template/basic/msg.jsp?tipInfo= can't query AbstractSysObj ---news---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.TagActionHandler.list 0 from 10.38.128.144 at Apr 10, 2014 2:50:46 PM use 13
+INFO (sand.actionhandler.system.ActionHandler:2888)- controllable is false
+ERROR (sand.actionhandler.system.ActionHandler:2889)- exception
+tool.dao.EditException:  can't query AbstractSysObj ---tag_rule---  it's status is disquerable
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:386)
+	at sand.actionhandler.system.ActionHandler.listObj(ActionHandler.java:1273)
+	at sand.actionhandler.system.ActionHandler.listObj(ActionHandler.java:1238)
+	at sand.actionhandler.tag.TagRuleActionHandler.list(TagRuleActionHandler.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sand.actionhandler.system.ActionHandler.run(ActionHandler.java:2390)
+	at sand.filter.JRest4GuiceProcessor.processNormalCall(JRest4GuiceProcessor.java:305)
+	at sand.filter.JRest4GuiceProcessor.process(JRest4GuiceProcessor.java:142)
+	at sand.filter.JRest4GuiceFilter.executeFilter(JRest4GuiceFilter.java:45)
+	at sand.filter.AbstractJRest4GuiceFilter.doFilter(AbstractJRest4GuiceFilter.java:349)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:90)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:225)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:999)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:565)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:309)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.actionhandler.system.ActionHandler:2904)- error length:2760
+INFO (sand.actionhandler.system.ActionHandler:2905)- message  can't query AbstractSysObj ---tag_rule---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:3032)- _nextUrl /template/basic/msg.jsp
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /template/basic/msg.jsp?tipInfo= can't query AbstractSysObj ---tag_rule---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.TagRuleActionHandler.list 0 from 10.38.128.144 at Apr 10, 2014 2:50:46 PM use 6
+INFO (sand.actionhandler.system.ActionHandler:2888)- controllable is false
+ERROR (sand.actionhandler.system.ActionHandler:2889)- exception
+tool.dao.EditException:  can't query AbstractSysObj ---dup_rule---  it's status is disquerable
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:386)
+	at tool.dao.QueryFactory.<init>(QueryFactory.java:319)
+	at sand.actionhandler.tag.TagRuleActionHandler.showDupRule(TagRuleActionHandler.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sand.actionhandler.system.ActionHandler.run(ActionHandler.java:2390)
+	at sand.filter.JRest4GuiceProcessor.processNormalCall(JRest4GuiceProcessor.java:305)
+	at sand.filter.JRest4GuiceProcessor.process(JRest4GuiceProcessor.java:142)
+	at sand.filter.JRest4GuiceFilter.executeFilter(JRest4GuiceFilter.java:45)
+	at sand.filter.AbstractJRest4GuiceFilter.doFilter(AbstractJRest4GuiceFilter.java:349)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:90)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:225)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:999)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:565)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:309)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+INFO (sand.actionhandler.system.ActionHandler:2904)- error length:2670
+INFO (sand.actionhandler.system.ActionHandler:2905)- message  can't query AbstractSysObj ---dup_rule---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:3032)- _nextUrl /template/basic/msg.jsp
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /template/basic/msg.jsp?tipInfo= can't query AbstractSysObj ---dup_rule---  it's status is disquerable
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.TagRuleActionHandler.showDupRule 0 from 10.38.128.144 at Apr 10, 2014 2:50:47 PM use 6
+ERROR (tool.dao.QueryFactory:880)- ERROR:select modifier,creator,modifydate,keyword,createdate,remarks,bizid,id from tag where ( isvalid=1 )   order by  orderby 
+INFO (tool.dao.QueryFactory:1027)- sql is :   select modifier,creator,modifydate,keyword,createdate,remarks,bizid,id from tag where ( isvalid=1 )   order by  orderby 
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.GpMailAH.expTags 0 from 10.38.128.144 at Apr 10, 2014 2:50:48 PM use 91
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.tool.system.OnlineListener:27)- begin  sessionDestroyed .........................ECE43DCBD9AA9F52B19CA3BC7F09CA58
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /
+INFO (sand.depot.tool.system.OnlineListener:23)- create session ...................597F02108B7880977C644EDD8E8B9F60
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.LoginAH.exit 0 from 10.38.128.144 at Apr 10, 2014 2:50:52 PM use 6
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname  system  1
+INFO (sand.depot.business.system.Employee:1256)- return 1
+INFO (sand.depot.business.system.Employee:1387)- result is 错误的用户名或密码
+INFO (sand.actionhandler.basic.LoginAH:848)- result is 错误的用户名或密码
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"system","userid":"system","isadmin":"","logincolumn":"loginname"}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 错误的用户名或密码
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /login.jsp?tipInfo=错误的用户名或密码
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.144 at Apr 10, 2014 2:50:54 PM use 11
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname  system  1
+INFO (sand.depot.business.system.Employee:1256)- return 1
+INFO (sand.depot.business.system.Employee:1387)- result is 1
+INFO (sand.actionhandler.basic.LoginAH:946)- write session  {"employee":{"loginname":"system","lastlogindate":"2014-04-10 14:50:58.522","showname":"system","userid":"system","isadmin":"","logincolumn":"loginname"}}
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"system","lastlogindate":"2014-04-10 14:50:58.522","showname":"system","userid":"system","isadmin":"","logincolumn":"loginname"}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 1
+INFO (sand.actionhandler.system.ActionHandler:2811)- is rest uri ,change dispatch type to DISPATCH_TYPE_REDIRECT
+INFO (sand.actionhandler.system.ActionHandler:2859)- redirect to /basic.HomeAH.index
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.144 at Apr 10, 2014 2:50:58 PM use 15
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /index.jsp
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.HomeAH.index 0 from 10.38.128.144 at Apr 10, 2014 2:50:58 PM use 4
+INFO (sand.depot.tool.system.OnlineListener:27)- begin  sessionDestroyed .........................7BE7A46C8F67D93CBCF08ED257A2B611
+INFO (sand.depot.tool.system.OnlineListener:42)- exit session ...................system
+INFO (sand.depot.tool.system.OnlineListener:27)- begin  sessionDestroyed .........................597F02108B7880977C644EDD8E8B9F60
+INFO (sand.depot.tool.system.OnlineListener:42)- exit session ...................system

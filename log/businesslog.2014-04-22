@@ -1,0 +1,27 @@
+INFO (sand.depot.tool.system.OnlineListener:23)- create session ...................CFED93EB1AB5268F6936DD2E1E0D4E87
+INFO (sand.actionhandler.basic.LoginAH:140)- SSOServiceURL  null/router
+INFO (sand.actionhandler.basic.LoginAH:141)- SSOLoginPage  null
+INFO (sand.depot.business.system.Employee:1254)- login sql is select lastlogindate,sex,janitor,remark,telno,state,createdate,photoid,type,answer3,password,answer2,isreal,creator,loginname,username,deptid,age,gender,page_schema,modifydate,aaa,status,activecode,answer,problem2,scrap,problem,code,problem3,modifier,email,address,isadmin,userid from employee where ( status=0 )  and  employee.loginname  =  ?     
+INFO (sand.depot.business.system.Employee:1255)- loginname  system  1
+INFO (sand.depot.business.system.Employee:1256)- return 1
+INFO (sand.depot.business.system.Employee:1387)- result is 1
+INFO (sand.actionhandler.basic.LoginAH:946)- write session  {"employee":{"loginname":"system","lastlogindate":"2014-04-22 11:35:59.704","showname":"system","userid":"system","isadmin":"","logincolumn":"loginname"}}
+INFO (sand.actionhandler.basic.LoginAH:542)- user  is {"employee":{"loginname":"system","lastlogindate":"2014-04-22 11:35:59.704","showname":"system","userid":"system","isadmin":"","logincolumn":"loginname"}}
+INFO (sand.actionhandler.basic.LoginAH:544)- ~~~~~~~~~~~~~~~~~~~~~ result is 1
+INFO (sand.actionhandler.system.ActionHandler:2811)- is rest uri ,change dispatch type to DISPATCH_TYPE_REDIRECT
+INFO (sand.actionhandler.system.ActionHandler:2859)- redirect to /basic.HomeAH.index
+INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.LoginAH.login 0 from 10.38.128.91 at Apr 22, 2014 11:35:59 AM use 27
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /index.jsp
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.HomeAH.index 0 from 10.38.128.91 at Apr 22, 2014 11:35:59 AM use 4
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /template/basic/userList.jsp
+ERROR (tool.dao.QueryFactory:880)- ERROR:select dicid,odb,name,id from v_dictionary where ( (1=1) )  and  v_dictionary.dicid  =  ?   order by v_dictionary.odb
+INFO (tool.dao.QueryFactory:1027)- sql is :   select dicid,odb,name,id from v_dictionary where ( (1=1) )  and  v_dictionary.dicid  =  ?   order by v_dictionary.odb
+ERROR (tool.dao.QueryFactory:880)- ERROR:select dicid,odb,name,id from v_dictionary where ( (1=1) )  and  v_dictionary.dicid  =  ?   order by v_dictionary.odb
+INFO (tool.dao.QueryFactory:1027)- sql is :   select dicid,odb,name,id from v_dictionary where ( (1=1) )  and  v_dictionary.dicid  =  ?   order by v_dictionary.odb
+ERROR (tool.dao.QueryFactory:880)- ERROR:select dicid,odb,name,id from v_dictionary where ( (1=1) )  and  v_dictionary.dicid  =  ?   order by odb
+INFO (tool.dao.QueryFactory:1027)- sql is :   select dicid,odb,name,id from v_dictionary where ( (1=1) )  and  v_dictionary.dicid  =  ?   order by odb
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.UserAH.listUser 0 from 10.38.128.91 at Apr 22, 2014 11:36:04 AM use 585
+INFO (sand.actionhandler.system.ActionHandler:2838)- dispatched to /template/basic/admin/userView.jsp
+INFO (sand.actionhandler.system.ActionHandler:2587)- system invoke front.UserAH.viewUser 0 from 10.38.128.91 at Apr 22, 2014 11:36:54 AM use 175
+INFO (sand.depot.tool.system.OnlineListener:27)- begin  sessionDestroyed .........................CFED93EB1AB5268F6936DD2E1E0D4E87
+INFO (sand.depot.tool.system.OnlineListener:42)- exit session ...................system
