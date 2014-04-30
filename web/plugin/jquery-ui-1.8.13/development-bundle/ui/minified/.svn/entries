@@ -1,7 +1,7 @@
 10
 
 dir
-7936
+7984
 svn://10.38.128.105/hnair/film/web/plugin/jquery-ui-1.8.13/development-bundle/ui/minified
 svn://10.38.128.105/hnair
 
@@ -26,14 +26,14 @@ xieke
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
 
-jquery.effects.fade.min.js
+jquery.effects.transfer.min.js
 file
 
 
 
 
 2014-04-10T03:47:54.909424Z
-b5091b3db8d8ea25ab578ae5ab09100f
+2d82ad744fe0f3b2bc3e3e6d8484a748
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -58,16 +58,16 @@ xieke
 
 
 
-577
+816
 
-jquery.ui.accordion.min.js
+jquery.ui.core.min.js
 file
 
 
 
 
 2014-04-10T03:47:54.909424Z
-9eb2612e4da94b6447f0cebed051ad24
+60e054cb5e14d76ee09d4b4e35e8edcd
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -92,7 +92,279 @@ xieke
 
 
 
-9224
+4334
+
+jquery.effects.scale.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.909424Z
+83d9d6eecc31c3930fc1bcd9e7073852
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3958
+
+jquery.ui.tabs.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.913424Z
+be3f9ea91989ab0a2e8a4ae28bb8c6c2
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11632
+
+jquery.ui.progressbar.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.913424Z
+450f31a354869908bca3db9002d2610d
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1841
+
+jquery.effects.clip.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.909424Z
+f4562440a61f4c00265df41a87209bdb
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1079
+
+jquery.effects.blind.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.913424Z
+7b88809c04e48b71c5e6bbee85185be0
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+888
+
+jquery.effects.core.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.913424Z
+7c72d5cf98524f991de6088f914e4cbb
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10799
+
+jquery.effects.shake.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.913424Z
+41f16c4961d8662fc7d366ffa7e99d71
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1150
+
+jquery.ui.dialog.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.913424Z
+2dc9ff109b80fb29a4a5ab331fcfda39
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11673
 
 jquery.ui.autocomplete.min.js
 file
@@ -196,6 +468,108 @@ xieke
 
 4306
 
+jquery.effects.drop.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.909424Z
+b2266b019cacdcc291c2611dafc6b206
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1088
+
+jquery.ui.draggable.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.909424Z
+01c4ac31e09b008b24389f949e08e0fa
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18674
+
+jquery.ui.droppable.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.909424Z
+d986ee4fd0e7b0d5768a137aacf86d54
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5771
+
 jquery.effects.highlight.min.js
 file
 
@@ -264,6 +638,40 @@ xieke
 
 6869
 
+jquery.effects.bounce.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.909424Z
+d8a308390d8b43867fa01c53715f649d
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1689
+
 jquery.effects.pulsate.min.js
 file
 
@@ -297,6 +705,40 @@ xieke
 
 
 951
+
+jquery.ui.resizable.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.909424Z
+c695e9eaf80d1d479cbac14090646a6a
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17410
 
 jquery.ui.slider.min.js
 file
@@ -366,14 +808,14 @@ xieke
 
 3274
 
-jquery.effects.transfer.min.js
+jquery.effects.fold.min.js
 file
 
 
 
 
 2014-04-10T03:47:54.909424Z
-2d82ad744fe0f3b2bc3e3e6d8484a748
+61e5b02977824f5edd145acd3c00d6c0
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -398,50 +840,16 @@ xieke
 
 
 
-816
+1146
 
-jquery.ui.progressbar.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.913424Z
-450f31a354869908bca3db9002d2610d
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1841
-
-jquery.effects.clip.min.js
+jquery.ui.mouse.min.js
 file
 
 
 
 
 2014-04-10T03:47:54.909424Z
-f4562440a61f4c00265df41a87209bdb
+5d03e8a62aec63559b46d113e98fae60
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -466,16 +874,16 @@ xieke
 
 
 
-1079
+2820
 
-jquery.effects.core.min.js
+jquery.ui.accordion.min.js
 file
 
 
 
 
-2014-04-10T03:47:54.913424Z
-7c72d5cf98524f991de6088f914e4cbb
+2014-04-10T03:47:54.909424Z
+9eb2612e4da94b6447f0cebed051ad24
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -500,7 +908,41 @@ xieke
 
 
 
-10799
+9224
+
+jquery.effects.fade.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.909424Z
+b5091b3db8d8ea25ab578ae5ab09100f
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+577
 
 jquery.effects.explode.min.js
 file
@@ -570,142 +1012,6 @@ xieke
 
 3617
 
-jquery.effects.drop.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.909424Z
-b2266b019cacdcc291c2611dafc6b206
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1088
-
-jquery.ui.droppable.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.909424Z
-d986ee4fd0e7b0d5768a137aacf86d54
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5771
-
-jquery.ui.draggable.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.909424Z
-01c4ac31e09b008b24389f949e08e0fa
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-18674
-
-jquery.ui.sortable.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.909424Z
-8f98be06099ad3c3d4b4ebbdd3cf8990
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-23920
-
 jquery.ui.datepicker.min.js
 file
 
@@ -740,14 +1046,14 @@ xieke
 
 36383
 
-jquery.effects.bounce.min.js
+jquery.ui.sortable.min.js
 file
 
 
 
 
 2014-04-10T03:47:54.909424Z
-d8a308390d8b43867fa01c53715f649d
+8f98be06099ad3c3d4b4ebbdd3cf8990
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -772,311 +1078,5 @@ xieke
 
 
 
-1689
-
-jquery.ui.resizable.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.909424Z
-c695e9eaf80d1d479cbac14090646a6a
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-17410
-
-jquery.effects.fold.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.909424Z
-61e5b02977824f5edd145acd3c00d6c0
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1146
-
-jquery.ui.mouse.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.909424Z
-5d03e8a62aec63559b46d113e98fae60
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2820
-
-jquery.ui.core.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.909424Z
-60e054cb5e14d76ee09d4b4e35e8edcd
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4334
-
-jquery.ui.tabs.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.913424Z
-be3f9ea91989ab0a2e8a4ae28bb8c6c2
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-11632
-
-jquery.effects.scale.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.909424Z
-83d9d6eecc31c3930fc1bcd9e7073852
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3958
-
-jquery.effects.blind.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.913424Z
-7b88809c04e48b71c5e6bbee85185be0
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-888
-
-jquery.effects.shake.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.913424Z
-41f16c4961d8662fc7d366ffa7e99d71
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1150
-
-jquery.ui.dialog.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.913424Z
-2dc9ff109b80fb29a4a5ab331fcfda39
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-11673
+23920
 

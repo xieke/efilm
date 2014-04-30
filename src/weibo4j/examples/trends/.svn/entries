@@ -1,7 +1,7 @@
 10
 
 dir
-7936
+7984
 svn://10.38.128.105/hnair/film/src/weibo4j/examples/trends
 svn://10.38.128.105/hnair
 
@@ -25,40 +25,6 @@ xieke
 
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
-
-TrendDestroy.java
-file
-
-
-
-
-2014-04-10T03:47:58.705424Z
-ff169967064d98212eb54dd657ecc3ee
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-560
 
 IsFollow.java
 file
@@ -263,4 +229,38 @@ xieke
 
 
 533
+
+TrendDestroy.java
+file
+
+
+
+
+2014-04-10T03:47:58.705424Z
+ff169967064d98212eb54dd657ecc3ee
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+560
 

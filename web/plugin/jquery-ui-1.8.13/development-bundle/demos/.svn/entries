@@ -1,7 +1,7 @@
 10
 
 dir
-7936
+7984
 svn://10.38.128.105/hnair/film/web/plugin/jquery-ui-1.8.13/development-bundle/demos
 svn://10.38.128.105/hnair
 
@@ -25,6 +25,21 @@ xieke
 
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
+
+slider
+dir
+
+removeClass
+dir
+
+switchClass
+dir
+
+progressbar
+dir
+
+tabs
+dir
 
 effect
 dir
@@ -66,10 +81,10 @@ xieke
 dialog
 dir
 
-accordion
+autocomplete
 dir
 
-autocomplete
+accordion
 dir
 
 selectable
@@ -84,10 +99,10 @@ dir
 toggleClass
 dir
 
-draggable
+droppable
 dir
 
-droppable
+draggable
 dir
 
 hide
@@ -130,10 +145,10 @@ xieke
 sortable
 dir
 
-button
+datepicker
 dir
 
-datepicker
+button
 dir
 
 addClass
@@ -149,20 +164,5 @@ resizable
 dir
 
 toggle
-dir
-
-slider
-dir
-
-removeClass
-dir
-
-switchClass
-dir
-
-progressbar
-dir
-
-tabs
 dir
 

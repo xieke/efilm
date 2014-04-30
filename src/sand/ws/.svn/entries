@@ -1,14 +1,14 @@
 10
 
 dir
-7936
+7984
 svn://10.38.128.105/hnair/film/src/sand/ws
 svn://10.38.128.105/hnair
 
 
 
-2014-04-10T03:34:11.455661Z
-7936
+2014-04-30T08:56:09.770620Z
+7983
 xieke
 
 
@@ -26,9 +26,12 @@ xieke
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
 
-client
+sms
 dir
 
-sms
+network
+dir
+
+client
 dir
 

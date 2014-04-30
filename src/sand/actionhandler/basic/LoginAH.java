@@ -4,6 +4,7 @@ package sand.actionhandler.basic;
 
 
 import java.io.BufferedReader;
+
 import java.io.IOException;
 import java.io.InputStreamReader;
 
@@ -34,7 +35,7 @@ import org.apache.log4j.Logger;
 
 
 import sand.actionhandler.system.ActionHandler;
-import sand.actionhandler.weibo.WeiBoAH;
+
 
 import sand.annotation.AccessControl;
 import sand.annotation.Ajax;
@@ -626,7 +627,7 @@ public class LoginAH extends ActionHandler {
 	 	Oauth oauth = new Oauth();
 	 	String code=this.getParameter("code");
 	 	if(code.equals("")) throw new ErrorException("empty code !!!!");
-	 	WeiBoAH.accesstoken =oauth.getAccessTokenByCode(code);
+	 	//WeiBoAH.accesstoken =oauth.getAccessTokenByCode(code);
 	 	//System.out.println();
 	 	this.dispatch("/weibo.WeiBoAH.readWeibo");
 	 	//return accesstoken.getAccessToken();

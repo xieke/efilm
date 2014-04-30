@@ -1,15 +1,15 @@
 10
 
 dir
-7936
+7984
 svn://10.38.128.105/hnair/film/web/template
 svn://10.38.128.105/hnair
 
 
 
-2014-04-10T03:34:11.455661Z
-7936
-xieke
+2014-04-28T03:00:35.178156Z
+7967
+pengfei
 
 
 
@@ -26,30 +26,6 @@ xieke
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
 
-post
-dir
-
-mobile
-dir
-
-tagging_rule
-dir
-
-rules
-dir
-
-tag
-dir
-
-news
-dir
-
-dup_rule
-dir
-
 basic
-dir
-
-customer
 dir
 

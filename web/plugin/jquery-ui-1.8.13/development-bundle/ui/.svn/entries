@@ -1,7 +1,7 @@
 10
 
 dir
-7936
+7984
 svn://10.38.128.105/hnair/film/web/plugin/jquery-ui-1.8.13/development-bundle/ui
 svn://10.38.128.105/hnair
 
@@ -25,43 +25,6 @@ xieke
 
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
-
-minified
-dir
-
-jquery.effects.pulsate.js
-file
-
-
-
-
-2014-04-10T03:47:55.037424Z
-c5278fbb99b951a93c00f0d52bee346e
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1221
 
 jquery.ui.slider.js
 file
@@ -814,40 +777,6 @@ xieke
 
 1939
 
-jquery.ui.dialog.js
-file
-
-
-
-
-2014-04-10T03:47:55.045424Z
-e5fed75562bc1993faf9a055b630a322
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-21814
-
 jquery-ui-1.8.13.custom.js
 file
 
@@ -882,14 +811,14 @@ xieke
 
 370776
 
-jquery.ui.autocomplete.js
+jquery.ui.dialog.js
 file
 
 
 
 
 2014-04-10T03:47:55.045424Z
-a9593db7e2101c4a886112ced217b00c
+e5fed75562bc1993faf9a055b630a322
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -914,7 +843,41 @@ xieke
 
 
 
-16529
+21814
+
+jquery.effects.fade.js
+file
+
+
+
+
+2014-04-10T03:47:55.045424Z
+83f759bc303f582689009fa367a1773e
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+691
 
 jquery.ui.accordion.js
 file
@@ -950,14 +913,14 @@ xieke
 
 16265
 
-jquery.effects.fade.js
+jquery.ui.autocomplete.js
 file
 
 
 
 
 2014-04-10T03:47:55.045424Z
-83f759bc303f582689009fa367a1773e
+a9593db7e2101c4a886112ced217b00c
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -982,7 +945,7 @@ xieke
 
 
 
-691
+16529
 
 jquery.effects.slide.js
 file
@@ -1119,4 +1082,41 @@ xieke
 
 
 10380
+
+jquery.effects.pulsate.js
+file
+
+
+
+
+2014-04-10T03:47:55.037424Z
+c5278fbb99b951a93c00f0d52bee346e
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1221
+
+minified
+dir
 

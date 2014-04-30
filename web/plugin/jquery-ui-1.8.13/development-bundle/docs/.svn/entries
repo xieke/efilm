@@ -1,7 +1,7 @@
 10
 
 dir
-7936
+7984
 svn://10.38.128.105/hnair/film/web/plugin/jquery-ui-1.8.13/development-bundle/docs
 svn://10.38.128.105/hnair
 
@@ -25,74 +25,6 @@ xieke
 
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
-
-toggleClass.html
-file
-
-
-
-
-2014-04-10T03:47:54.861424Z
-09935e14f6d0de522ba63c08fbea7152
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4140
-
-droppable.html
-file
-
-
-
-
-2014-04-10T03:47:54.861424Z
-deff55380f758eb5ca3ab8f323a5fcb5
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-22546
 
 draggable.html
 file
@@ -127,6 +59,40 @@ xieke
 
 
 42728
+
+droppable.html
+file
+
+
+
+
+2014-04-10T03:47:54.861424Z
+deff55380f758eb5ca3ab8f323a5fcb5
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+22546
 
 hide.html
 file
@@ -502,40 +468,6 @@ xieke
 
 4659
 
-progressbar.html
-file
-
-
-
-
-2014-04-10T03:47:54.861424Z
-541ebb59962669f632074d907e0f195d
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-12247
-
 tabs.html
 file
 
@@ -569,6 +501,40 @@ xieke
 
 
 51800
+
+progressbar.html
+file
+
+
+
+
+2014-04-10T03:47:54.861424Z
+541ebb59962669f632074d907e0f195d
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12247
 
 effect.html
 file
@@ -638,40 +604,6 @@ xieke
 
 44289
 
-accordion.html
-file
-
-
-
-
-2014-04-10T03:47:54.865424Z
-d34b0e3636a81b387c7cb1d07a5cb773
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-30591
-
 autocomplete.html
 file
 
@@ -705,6 +637,40 @@ xieke
 
 
 27433
+
+accordion.html
+file
+
+
+
+
+2014-04-10T03:47:54.865424Z
+d34b0e3636a81b387c7cb1d07a5cb773
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30591
 
 selectable.html
 file
@@ -773,4 +739,38 @@ xieke
 
 
 7851
+
+toggleClass.html
+file
+
+
+
+
+2014-04-10T03:47:54.861424Z
+09935e14f6d0de522ba63c08fbea7152
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4140
 

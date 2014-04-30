@@ -1,7 +1,7 @@
 10
 
 dir
-7936
+7984
 svn://10.38.128.105/hnair/film/web/scripts/datepicker_old/skin
 svn://10.38.128.105/hnair
 
@@ -25,9 +25,6 @@ xieke
 
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
-
-default
-dir
 
 Thumbs.db
 file
@@ -133,4 +130,7 @@ has-props
 
 
 1043
+
+default
+dir
 
