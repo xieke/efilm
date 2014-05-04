@@ -1,7 +1,7 @@
 10
 
 dir
-7984
+7988
 svn://10.38.128.105/hnair/film/src/sand/ws/network
 svn://10.38.128.105/hnair
 
@@ -25,40 +25,6 @@ xieke
 
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
-
-memberCenterX509TrustManager.java
-file
-
-
-
-
-2014-04-30T08:56:16.940445Z
-f68f4f3a5c69f9406db4aa2218bfd476
-2014-04-30T08:56:09.770620Z
-7983
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-519
 
 SSLService.java
 file
@@ -195,4 +161,38 @@ xieke
 
 
 9259
+
+memberCenterX509TrustManager.java
+file
+
+
+
+
+2014-04-30T08:56:16.940445Z
+f68f4f3a5c69f9406db4aa2218bfd476
+2014-04-30T08:56:09.770620Z
+7983
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+519
 

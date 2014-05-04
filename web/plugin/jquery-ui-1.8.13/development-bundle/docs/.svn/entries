@@ -1,7 +1,7 @@
 10
 
 dir
-7984
+7988
 svn://10.38.128.105/hnair/film/web/plugin/jquery-ui-1.8.13/development-bundle/docs
 svn://10.38.128.105/hnair
 
@@ -26,14 +26,14 @@ xieke
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
 
-draggable.html
+toggleClass.html
 file
 
 
 
 
 2014-04-10T03:47:54.861424Z
-ea23237ecabd2870e8abca29b1bd376d
+09935e14f6d0de522ba63c08fbea7152
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -58,7 +58,7 @@ xieke
 
 
 
-42728
+4140
 
 droppable.html
 file
@@ -94,6 +94,40 @@ xieke
 
 22546
 
+draggable.html
+file
+
+
+
+
+2014-04-10T03:47:54.861424Z
+ea23237ecabd2870e8abca29b1bd376d
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+42728
+
 hide.html
 file
 
@@ -127,40 +161,6 @@ xieke
 
 
 5258
-
-button.html
-file
-
-
-
-
-2014-04-10T03:47:54.861424Z
-a364d75379c1499d5200139782ab10a9
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-14929
 
 sortable.html
 file
@@ -196,14 +196,14 @@ xieke
 
 51592
 
-animate.html
+button.html
 file
 
 
 
 
 2014-04-10T03:47:54.861424Z
-3345d0f8915b41b1de620e88370b3d71
+a364d75379c1499d5200139782ab10a9
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -228,7 +228,7 @@ xieke
 
 
 
-3480
+14929
 
 addClass.html
 file
@@ -264,14 +264,14 @@ xieke
 
 4052
 
-show.html
+animate.html
 file
 
 
 
 
 2014-04-10T03:47:54.861424Z
-fff29a8d16ac78a4ec1a2389538be0e5
+3345d0f8915b41b1de620e88370b3d71
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -296,7 +296,7 @@ xieke
 
 
 
-5272
+3480
 
 resizable.html
 file
@@ -331,6 +331,40 @@ xieke
 
 
 32192
+
+show.html
+file
+
+
+
+
+2014-04-10T03:47:54.861424Z
+fff29a8d16ac78a4ec1a2389538be0e5
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5272
 
 toggle.html
 file
@@ -468,40 +502,6 @@ xieke
 
 4659
 
-tabs.html
-file
-
-
-
-
-2014-04-10T03:47:54.865424Z
-9427ea76122cbae8f3cc1e64c5172b60
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-51800
-
 progressbar.html
 file
 
@@ -535,6 +535,40 @@ xieke
 
 
 12247
+
+tabs.html
+file
+
+
+
+
+2014-04-10T03:47:54.865424Z
+9427ea76122cbae8f3cc1e64c5172b60
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+51800
 
 effect.html
 file
@@ -739,38 +773,4 @@ xieke
 
 
 7851
-
-toggleClass.html
-file
-
-
-
-
-2014-04-10T03:47:54.861424Z
-09935e14f6d0de522ba63c08fbea7152
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4140
 

@@ -1,7 +1,7 @@
 10
 
 dir
-7984
+7988
 svn://10.38.128.105/hnair/film/web/plugin/kindeditor-4.1.2/plugins
 svn://10.38.128.105/hnair
 
@@ -26,25 +26,10 @@ xieke
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
 
-quickformat
-dir
-
-table
-dir
-
-multiimage
-dir
-
-link
-dir
-
-flash
+emoticons
 dir
 
 plainpaste
-dir
-
-emoticons
 dir
 
 insertfile
@@ -53,19 +38,19 @@ dir
 wordpaste
 dir
 
-anchor
+filemanager
 dir
 
 code
 dir
 
-filemanager
-dir
-
-clearhtml
+anchor
 dir
 
 template
+dir
+
+clearhtml
 dir
 
 map
@@ -87,5 +72,20 @@ baidumap
 dir
 
 image
+dir
+
+quickformat
+dir
+
+table
+dir
+
+flash
+dir
+
+link
+dir
+
+multiimage
 dir
 

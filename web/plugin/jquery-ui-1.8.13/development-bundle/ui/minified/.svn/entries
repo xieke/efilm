@@ -1,7 +1,7 @@
 10
 
 dir
-7984
+7988
 svn://10.38.128.105/hnair/film/web/plugin/jquery-ui-1.8.13/development-bundle/ui/minified
 svn://10.38.128.105/hnair
 
@@ -25,6 +25,108 @@ xieke
 
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
+
+jquery.ui.position.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.909424Z
+ecffdde7c4be59aa58aec27143ad53eb
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3617
+
+jquery.ui.sortable.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.909424Z
+8f98be06099ad3c3d4b4ebbdd3cf8990
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+23920
+
+jquery.ui.datepicker.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.909424Z
+8b935a70d83b06b6aa62188b4e827a63
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+36383
 
 jquery.effects.transfer.min.js
 file
@@ -502,40 +604,6 @@ xieke
 
 1088
 
-jquery.ui.draggable.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.909424Z
-01c4ac31e09b008b24389f949e08e0fa
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-18674
-
 jquery.ui.droppable.min.js
 file
 
@@ -569,6 +637,40 @@ xieke
 
 
 5771
+
+jquery.ui.draggable.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.909424Z
+01c4ac31e09b008b24389f949e08e0fa
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18674
 
 jquery.effects.highlight.min.js
 file
@@ -876,40 +978,6 @@ xieke
 
 2820
 
-jquery.ui.accordion.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.909424Z
-9eb2612e4da94b6447f0cebed051ad24
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-9224
-
 jquery.effects.fade.min.js
 file
 
@@ -944,6 +1012,40 @@ xieke
 
 577
 
+jquery.ui.accordion.min.js
+file
+
+
+
+
+2014-04-10T03:47:54.909424Z
+9eb2612e4da94b6447f0cebed051ad24
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9224
+
 jquery.effects.explode.min.js
 file
 
@@ -977,106 +1079,4 @@ xieke
 
 
 1644
-
-jquery.ui.position.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.909424Z
-ecffdde7c4be59aa58aec27143ad53eb
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3617
-
-jquery.ui.datepicker.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.909424Z
-8b935a70d83b06b6aa62188b4e827a63
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-36383
-
-jquery.ui.sortable.min.js
-file
-
-
-
-
-2014-04-10T03:47:54.909424Z
-8f98be06099ad3c3d4b4ebbdd3cf8990
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-23920
 

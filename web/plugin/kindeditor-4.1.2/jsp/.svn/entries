@@ -1,7 +1,7 @@
 10
 
 dir
-7984
+7988
 svn://10.38.128.105/hnair/film/web/plugin/kindeditor-4.1.2/jsp
 svn://10.38.128.105/hnair
 
@@ -25,6 +25,9 @@ xieke
 
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
+
+lib
+dir
 
 upload_json.jsp
 file
@@ -161,7 +164,4 @@ xieke
 
 
 1797
-
-lib
-dir
 

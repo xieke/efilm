@@ -1,7 +1,7 @@
 10
 
 dir
-7984
+7988
 svn://10.38.128.105/hnair/film/src/weibo4j/examples/comment
 svn://10.38.128.105/hnair
 
@@ -25,6 +25,40 @@ xieke
 
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
+
+DestroyCommentBatcn.java
+file
+
+
+
+
+2014-04-10T03:47:58.585424Z
+07c635f1f30c30463653941b043c9f36
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+551
 
 GetCommentShowBatch.java
 file
@@ -331,38 +365,4 @@ xieke
 
 
 807
-
-DestroyCommentBatcn.java
-file
-
-
-
-
-2014-04-10T03:47:58.585424Z
-07c635f1f30c30463653941b043c9f36
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-551
 

@@ -70,7 +70,10 @@ public class WebChatService extends ActionHandler {
 	public String createMenu(){
 		return WebChatKit.createMenu();
 	} 
-	
+	@Ajax
+	public String getUserInfo(){
+		return WebChatKit.getUserInfo(this.getParameter("openid")).toString();
+	} 	
 	public void boundCard(){
 		logger.info("_wxId is "+_wxID);
 		this._nextUrl="/weixin/v2.0/bind_card.jsp";

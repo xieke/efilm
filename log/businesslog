@@ -6,3 +6,91 @@ INFO (sand.actionhandler.open.WebChatService:105)- b is {"msgid":"60094566809971
 INFO (sand.actionhandler.open.WebChatKit:160)- return:<xml><ToUserName><![CDATA[o9PJFuA4fF_QkMXRfx9xzFj5La8c]]></ToUserName><FromUserName><![CDATA[gh_6544405c5abb]]></FromUserName><CreateTime>1399185460263</CreateTime><MsgType><![CDATA[text]]></MsgType><PicUrl><![CDATA[]]></PicUrl><Content><![CDATA[谢谢你的发言，请继续..]]></Content><Image><MediaId><![CDATA[]]></MediaId></Image></xml>
 INFO (sand.actionhandler.system.ActionHandler:2587)- a dog invoke front.WebChatService.access 0 from 10.38.128.197 at May 4, 2014 2:37:40 PM use 495
 INFO (sand.depot.tool.system.OnlineListener:27)- begin  sessionDestroyed .........................41FA854289EA201927B67B3F7CC2B58B
+INFO (org.springframework.web.context.support.XmlWebApplicationContext:1033)- Closing Root WebApplicationContext: startup date [Wed Apr 30 16:58:38 CST 2014]; root of context hierarchy
+INFO (org.springframework.beans.factory.support.DefaultListableBeanFactory:433)- Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@499a12ee: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tagService,newsService,tagRuleService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO (sand.depot.job.QuartzManager:219)- remove all quartz jobs ..........
+INFO (sand.depot.servlet.system.ContextListener:157)- schema basic
+INFO (sand.depot.servlet.system.ContextListener:163)- sschema 1
+INFO (sand.depot.servlet.system.ContextListener:181)- server name is front
+INFO (sand.basic.Global:92)- 开始注册
+INFO (sand.basic.GlobalConfig:57)- in is java.io.ByteArrayInputStream@8cbdce1
+INFO (sand.basic.GlobalConfig:92)- read property registed  value: 1
+INFO (sand.basic.GlobalConfig:92)- read property maxonline  value: 500
+INFO (sand.basic.GlobalConfig:92)- read property regdate  value: 1366128350724
+INFO (sand.basic.GlobalConfig:92)- read property registed  value: 1
+INFO (sand.basic.GlobalConfig:92)- read property regname  value: HNA
+INFO (sand.basic.GlobalConfig:92)- read property modules  value: 1000000000
+INFO (sand.basic.Global:104)- basic  1
+INFO (sand.basic.Global:104)- product  0
+INFO (sand.basic.Global:104)- workflow  0
+INFO (sand.basic.Global:104)- meeting  0
+INFO (sand.basic.Global:104)- taskta  0
+INFO (sand.basic.Global:104)- project  0
+INFO (sand.basic.Global:104)- require  0
+INFO (sand.basic.Global:104)- test  0
+INFO (sand.basic.Global:104)- system  0
+INFO (sand.basic.Global:104)- kbm  0
+INFO (sand.basic.Global:108)- 已经注册 ，返回
+INFO (tool.dao.DBPool:244)- Initializing DBPool....
+INFO (sand.depot.servlet.system.ContextListener:249)- load schema:basic
+INFO (tool.dao.SingletonStructure:409)- pks com.mysql.jdbc.JDBC4ResultSet@1410d55b
+INFO (tool.dao.SingletonStructure:450)- 1  account
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 2  advertise
+INFO (tool.dao.SingletonStructure:450)- 3  annex
+INFO (tool.dao.SingletonStructure:450)- 4  article
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 5  attestation
+INFO (tool.dao.SingletonStructure:450)- 6  billno
+INFO (tool.dao.SingletonStructure:450)- 7  card
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 8  department
+INFO (tool.dao.SingletonStructure:450)- 9  dictionary
+INFO (tool.dao.SingletonStructure:450)- 10  document
+INFO (tool.dao.SingletonStructure:450)- 11  employee
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 12  erplog
+INFO (tool.dao.SingletonStructure:450)- 13  exception
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 14  function
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 15  item
+INFO (tool.dao.SingletonStructure:450)- 16  link_desktop
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 17  message
+INFO (tool.dao.SingletonStructure:248)- default is 0
+INFO (tool.dao.SingletonStructure:248)- default is 0
+INFO (tool.dao.SingletonStructure:248)- default is 0
+INFO (tool.dao.SingletonStructure:248)- default is 0
+INFO (tool.dao.SingletonStructure:450)- 18  module
+INFO (tool.dao.SingletonStructure:450)- 19  my_plugin_config
+INFO (tool.dao.SingletonStructure:248)- default is 0
+INFO (tool.dao.SingletonStructure:450)- 20  newcomments
+INFO (tool.dao.SingletonStructure:450)- 21  plugin_config
+INFO (tool.dao.SingletonStructure:248)- default is 0
+INFO (tool.dao.SingletonStructure:450)- 22  re_friend
+INFO (tool.dao.SingletonStructure:450)- 23  re_fun_role
+INFO (tool.dao.SingletonStructure:450)- 24  re_general
+INFO (tool.dao.SingletonStructure:450)- 25  re_module_role
+INFO (tool.dao.SingletonStructure:450)- 26  re_team_user
+INFO (tool.dao.SingletonStructure:450)- 27  re_user_link_desktop
+INFO (tool.dao.SingletonStructure:248)- default is 
+INFO (tool.dao.SingletonStructure:450)- 28  re_user_role
+INFO (tool.dao.SingletonStructure:450)- 29  role
+INFO (tool.dao.SingletonStructure:450)- 30  seedhouse
+INFO (tool.dao.SingletonStructure:450)- 31  tag
+INFO (tool.dao.SingletonStructure:450)- 32  task
+INFO (tool.dao.SingletonStructure:450)- 33  tasklog
+INFO (tool.dao.SingletonStructure:450)- 34  team
+INFO (tool.dao.SingletonStructure:450)- 35  tel_message
+INFO (tool.dao.SingletonStructure:450)- 36  whatyoudo
+INFO (tool.dao.SingletonStructure:450)- 37  v_dictionary
+INFO (sand.depot.servlet.system.ContextListener:254)- main schema is basic
+INFO (sand.depot.servlet.system.ContextListener:290)- Initialization finished Sun May 04 17:08:14 CST 2014
+INFO (sand.depot.job.QuartzManager:98)- add all local quartz jobs ..........
+INFO (sand.depot.job.QuartzManager:334)- add job finished
+INFO (org.springframework.web.context.ContextLoader:272)- Root WebApplicationContext: initialization started
+INFO (org.springframework.web.context.support.XmlWebApplicationContext:508)- Refreshing Root WebApplicationContext: startup date [Sun May 04 17:08:14 CST 2014]; root of context hierarchy
+INFO (org.springframework.beans.factory.xml.XmlBeanDefinitionReader:315)- Loading XML bean definitions from URL [file:/root/efilm/build/WEB-INF/classes/spring.context.xml]
+INFO (org.springframework.beans.factory.support.DefaultListableBeanFactory:577)- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@14a40e04: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tagService,newsService,tagRuleService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO (org.springframework.web.context.ContextLoader:301)- Root WebApplicationContext: initialization completed in 328 ms

@@ -42,10 +42,9 @@ public class WebChatKit {
             "<FromUserName><![CDATA[%2$s]]></FromUserName>"+  
             "<CreateTime>%3$s</CreateTime>"+  
             "<MsgType><![CDATA[%4$s]]></MsgType>"+  
-            "<PicUrl><![CDATA[%5$s]]></PicUrl>"+
-            "<Content><![CDATA[%6$s]]></Content>"+            
+            "<Content><![CDATA[%5$s]]></Content>"+            
             "<Image>"+
-            "<MediaId><![CDATA[%7$s]]></MediaId>"+
+            "<MediaId><![CDATA[%6$s]]></MediaId>"+
             "</Image>"+            
             "</xml>";    
 	
@@ -217,7 +216,19 @@ public class WebChatKit {
         }
 		return null;
     }
-    
+    public static BizObject getUserInfo(String openid){
+    	
+    	String contentType="application/x-www-form-urlencoded";
+    	String url="https://api.weixin.qq.com/cgi-bin/user/info?access_token="+getAccessToken()+"&openid="+openid;
+    	//String url ="https://api.weixin.qq.com/cgi-bin/menu/create?access_token="+getAccessToken();
+			//+"&body="+menu.toString();
+    	SSLService sslService=new SSLService();
+		String str = sslService.sendRequest(url,contentType, null,null);
+		BizObject biz = JsonTool.toBizObj(str);
+	
+		return biz;
+
+    }
     public static String createMenu(){
     	
     	BizObject menu=new BizObject();
