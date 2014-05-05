@@ -12,6 +12,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -34,7 +35,7 @@ import tool.dao.BizObject;
 @AccessControl("no")
 public class WebChatService extends ActionHandler {
 
-	protected String _wxID="" ;  //当前的微信id
+	protected String _openid="" ;  //当前的微信id
 	static Logger logger = Logger.getLogger(WebChatService.class);
 	public WebChatService(HttpServletRequest req, HttpServletResponse res) {
 		super(req, res);
@@ -78,30 +79,30 @@ public class WebChatService extends ActionHandler {
 		return WebChatKit.getUserInfo(this.getParameter("openid")).toString();
 	} 	
 	public void boundCard(){
-		logger.info("_wxId is "+_wxID);
+		logger.info("_wxId is "+_openid);
 		this._nextUrl="/weixin/v2.0/bind_card.jsp";
 	}
 	public void boundMember(){
-		logger.info("_wxId is "+_wxID);
+		logger.info("_wxId is "+_openid);
 		this._nextUrl="/weixin/v2.0/bind_member.jsp";
 	}
 	public void queryCard(){
-		logger.info("_wxId is "+_wxID);
+		logger.info("_wxId is "+_openid);
 		this._nextUrl="/weixin/v2.0/money.jsp";
 		
 	}
 	public void queryLog(){
-		logger.info("_wxId is "+_wxID);
+		logger.info("_wxId is "+_openid);
 		this._nextUrl="/weixin/v2.0/log.jsp";
 		
 	}
 	public void modPass(){
-		logger.info("_wxId is "+_wxID);
+		logger.info("_wxId is "+_openid);
 		this._nextUrl="/weixin/v2.0/mod_pwd.jsp";
 		
 	}
 	public void charge(){
-		logger.info("_wxId is "+_wxID);
+		logger.info("_wxId is "+_openid);
 		this._nextUrl="/weixin/v2.0/mobile.jsp";
 		
 	}
@@ -152,6 +153,27 @@ public class WebChatService extends ActionHandler {
             return false;  
         }  
     }  
+    
+    /**认证
+     * @throws ServletException 
+     * @throws IOException **
+     * 
+     */
+    public void getCode(String uri){
+    	String url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=";
+    	url=url+WebChatKit.APP_ID+"&redirect_uri="+uri;
+    	url=url+"&response_type=code&scope=snsapi_base&state="+uri+"#wechat_redirect";
+    	
+    	try {
+			this.redirectTo(url);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ServletException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
 	/**
 	 * 初始化，这里要做验证签名
 	 */
@@ -177,24 +199,41 @@ public class WebChatService extends ActionHandler {
     	HttpSession s =_request.getSession(false);
     	logger.info("session is "+s);
     	if(s!=null) logger.info("session id is "+s.getId());
-    		String token=(String) _request.getSession().getAttribute("token");
-    		if(StringUtils.isBlank(token)){
+    		_openid=(String) _request.getSession().getAttribute("token");
+    		if(StringUtils.isBlank(_openid)){
     			
-    			token=this.getParameter("token");	
-    			logger.info("no token , try to get from session  "+token);
-    			if(!StringUtils.isBlank(token)) 			_request.getSession(false).setAttribute("token", token);
+    			if(StringUtils.isBlank(this.getParameter("code"))){
+        			logger.info("curmethod  "+this._curMethod);
+        
+    					this.getCode(WebChatKit.createUrl(this._curMethod));
+
+    				//}
+    				
+    			}
+    			else{
+    				_openid=WebChatKit.getOpenId(this.getParameter("code")).getString("openid");
+    				logger.info("get openid "+_openid);
+    				s.setAttribute("token", _openid);
+    			}
     		}
-    		
-    		logger.info("token is "+token);
-    		try {
-				_wxID=WebChatKit.getWxIdByToken(token);
-				logger.info("_wxID is "+_wxID);
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				logger.info("",e);
-				throw new OpenServiceException("2001") ; //系统异常
-			}
+    		//if(_openID)
+//    		if(StringUtils.isBlank(token)){
+//    			
+//    			token=this.getParameter("token");	
+//    			logger.info("no token , try to get from session  "+token);
+//    			if(!StringUtils.isBlank(token)) 			_request.getSession(false).setAttribute("token", token);
+//    		}
+//    		
+//    		logger.info("token is "+token);
+//    		try {
+//				_openID=WebChatKit.getWxIdByToken(token);
+//				logger.info("_wxID is "+_openID);
+//			} catch (Exception e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//				logger.info("",e);
+//				throw new OpenServiceException("2001") ; //系统异常
+//			}
     		
   		
     //	}

@@ -87,6 +87,10 @@ public class WebChatKit {
     	String token=createToken(wxid);
     	return url+method+"?token="+token;
     }
+    public static String createUrl(String method){
+    	//String token=createToken(wxid);
+    	return url+method;
+    }
     //数组转字符串  
     public static String ArrayToString(String [] arr){  
         StringBuffer bf = new StringBuffer();  
@@ -233,6 +237,21 @@ public class WebChatKit {
 		return biz;
 
     }
+    
+    public static BizObject getOpenId(String code){
+    	
+    	String contentType="application/x-www-form-urlencoded";
+    	String url="https://api.weixin.qq.com/sns/oauth2/access_token?appid="+APP_ID+"&secret="+APP_SECRET+"&code="+code+"&grant_type=authorization_code";
+    	//String url ="https://api.weixin.qq.com/cgi-bin/menu/create?access_token="+getAccessToken();
+			//+"&body="+menu.toString();
+    	SSLService sslService=new SSLService();
+		String str = sslService.sendRequest(url,contentType, null,null);
+		BizObject biz = JsonTool.toBizObj(str);
+	
+		return biz;
+
+    }
+    //public static 
     public static String getMenu(){
        	String contentType="application/x-www-form-urlencoded";
        	//SSLService sslService;
