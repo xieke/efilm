@@ -1,0 +1,100 @@
+<!--
+<?php
+print <<<EOT
+-->
+<div class="cardexplain">
+
+
+
+
+
+	<ul class="round roundyellow">
+		<li class="detail other_select"><span><strong>北京</strong><em class="error">选择出发城市</em></span>
+        <select id="deptCode">
+        	<option value="001">北京</option>
+            <option value="002">上海</option>
+            <option value="003">广州</option>
+            <option value="004">海口</option>
+            <option value="005">三亚</option>
+        </select>
+        </li>
+	</ul>
+<script>
+$(function(){
+	$('#deptCode').change(function(){
+		deptCode=this.value;
+		$('.other_select span strong').html($(this).find(":selected").html());
+	});
+})
+</script>
+
+
+
+	<ul class="round">
+		<li id="ajax_load_more"><img src="$wedb[www_url]/images/ajax-loader-16.gif"></li>
+	</ul>
+<style>
+#ajax_load_more{ display:none; text-align:center; padding:10px 10px 6px 10px}
+</style>
+<script type="text/javascript">
+var ajax_able=true;
+var pageNo=1;
+var showPageCount=99;
+var type="1";//01.热门，02.冷门
+var deptCode='001';
+$(function () {
+		request_list();
+}); 
+
+
+
+
+
+
+
+
+window.onscroll=function(){
+	var a = document.documentElement.scrollTop==0? document.body.clientHeight : document.documentElement.clientHeight;
+	var b = document.documentElement.scrollTop==0? document.body.scrollTop : document.documentElement.scrollTop;
+	var c = document.documentElement.scrollTop==0? document.body.scrollHeight : document.documentElement.scrollHeight;
+	if((a+b==c)&&ajax_able&&(pageNo<=showPageCount)){
+		ajax_able=false;
+		request_list();
+	}else if((a+b==c)&&ajax_able&&(pageNo>showPageCount)){
+		$("#ajax_load_more").html("已经是最后一条记录").show();
+	}
+}
+function request_list(){
+	$("#ajax_load_more").show();
+	$.post("$webdb[www_url]/ajax-hna.json",{"action":"web/phone/prod/tourpre/querytourpre","deptCode":deptCode,"type":type,"pageSize":"10","pageNo":pageNo},function(result){
+		if(result.resultCode==""){
+			json_insert_html(result.result.data);
+			showPageCount=result.result.pageInfo.showPageCount;
+			pageNo++;
+		}else{
+			alert(result.resultCode);
+		}
+		$("#ajax_load_more").hide();
+		ajax_able=true;
+	},'json');
+}
+function json_insert_html(result){
+	var html_temp="";
+	$.each(result, function(i,rs){
+		localStorage[rs.id]=JSON.stringify(rs);
+		html_temp='<li><span class="img_list2"><a href="$webdb[www_url]/65.html?id='+rs.id+'&ab=a"><img src="$webdb[www_url]/images/lv1.jpg" style="width:90px; height:110px" /><strong>'+rs.name+'</strong><strong class="txt_blue"></strong> <strong class="tags_imax">'+rs.hotType+'</strong><div class="img_list2_p">天数：'+rs.dayNum+' 天 '+rs.nightNum+' 晚<br />酒店：'+rs.hotelStar+' 星级<br />路线：'+rs.deptPlace+' 到 '+rs.desination+'<br />成人价：<strong>￥<strong>'+rs.adultSalePrice+'</strong></strong> &nbsp; 儿童价：<strong>￥<strong>'+rs.childSalePrice+'</strong></strong></div></a></span></li>'+html_temp;
+	});	
+	$("#ajax_load_more").before(html_temp);
+}
+
+
+
+
+
+
+</script>
+</div>
+<!--
+EOT;
+?>
+-->

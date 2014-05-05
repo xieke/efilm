@@ -1,0 +1,76 @@
+<!--
+<?php
+print <<<EOT
+-->
+<div class="cardexplain">
+
+	<ul class="round roundyellow">
+		<li class="movies"><span class="none"><strong>魔女神兵</strong><em class="error">98分钟</em></span></li>
+	</ul>
+
+	<ul class="round">
+		<li style="padding:10px 0 0 10px">
+<div class="radio_select2">
+	<div class="calendar select"><div class="week">星期日</div><div class="day">13</div></div>
+    <div class="calendar"><div class="week">星期一</div><div class="day">14</div></div>
+    <div class="calendar"><div class="week">星期二</div><div class="day">15</div></div>
+</div>
+		</li>
+	</ul>
+
+	<ul class="round">
+		<li>
+		<h2>场次选择</h2>
+<div class="radio_select3">
+	<div class="film select"><strong>09:00</strong>3#厅<br />3D IMAX<div>当场非会员价</div></div>
+    <div class="film english"><strong>10:00</strong>5#厅<br />3D IMAX<div>最低会员价</div></div>
+    <div class="film"><strong>10:45</strong>3#厅<br />3D IMAX<div>最低会员价</div></div>
+    <div class="film france"><strong>11:30</strong>2#厅<br />3D IMAX<div>最低会员价</div></div>
+    <div class="film english"><strong>12:00</strong>1#厅<br />3D IMAX<div>最低会员价</div></div>
+    <div class="film"><strong>12:45</strong>4#厅<br />3D IMAX<div>当场非会员价</div></div>
+</div>
+<script>
+$(function(){
+	$(".radio_select2 .calendar").click(function(){
+		$(".radio_select2 .calendar").removeClass("select");
+		$(this).addClass("select");
+	});
+	$(".radio_select3 .film").click(function(){
+		$(".radio_select3 .film").removeClass("select");
+		$(this).addClass("select");
+		//window.location.href='$webdb[www_url]/46.html';
+
+		$('#window2').fadeIn()
+
+
+	});
+})
+</script>
+		</li>
+	</ul>
+
+
+
+
+
+
+
+<div id="window2" class="window2">
+	<div class="window2_content">
+		<div class="window2_close" onclick="$('#window2').fadeOut()">X</div>
+    	<div class="window2_title">绑定会员卡</div>
+        <div>首次使用会员卡购票：</div>
+        <div style="margin:12px 0; border-bottom:1px solid #eee; padding-bottom:10px"><input name="truename" class="px" id="truename" value="" placeholder="请填写会员卡号" type="tel" /></div>
+        <div><input class="submit" onclick="window.location.href='$webdb[www_url]/46.html'" value="确定" type="button" /></div>
+    </div>
+</div>
+
+
+
+
+
+</div>
+<!--
+EOT;
+?>
+-->

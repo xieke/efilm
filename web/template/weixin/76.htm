@@ -1,0 +1,147 @@
+<!--
+<?php
+print <<<EOT
+-->
+<div class="cardexplain">
+	<ul class="round">
+		<li>
+		<h2 style="padding:5px 0; font-size:14px">权益详情</h2>
+		<div class="text" style="padding:7px 0; font-size:12px; margin:0; line-height:20px">
+权益ID：<strong id="rights_rightsId"></strong><br />
+权益编码：<strong id="rights_rightsCode"></strong><br />
+订单状态：<strong id="rights_sts"></strong><br />
+卡状态：<strong id="rights_cardSts"></strong><br />
+支付状态：<strong id="rights_paySts"></strong><br />
+成人单价：<strong id="rights_adultPrice"></strong> 元<br />
+儿童单价：<strong id="rights_childPrice"></strong> 元<br />
+订单总金额：<strong id="rights_price"></strong> 元<br />
+还需支付：<strong id="rights_actualPay"></strong> 元<br />
+支付方式：<strong id="rights_payType"></strong><br />
+支付时间：<strong id="rights_payTime"></strong><br />
+儿童数量：<strong id="rights_childNum"></strong> 位<br />
+成人数量：<strong id="rights_adultNum"></strong> 位<br />
+预订时间：<strong id="rights_createTime"></strong>
+        </div>
+		</li>
+	</ul>
+    <div class="footReturn">
+   	 <input id="to_submit" class="submit" onclick="window.location.href='$webdb[www_url]/73.html'" value="使用权益预约旅游" type="button" >
+    </div>
+	<ul class="round">
+		<li>
+		<h2 style="padding:5px 0; font-size:14px">预约信息</h2>
+		<div class="text" style="padding:7px 0; font-size:12px; margin:0; line-height:20px" id="appointmentList">
+        </div>
+		</li>
+	</ul>
+	<ul class="round">
+		<li>
+		<h2 style="padding:5px 0; font-size:14px">旅客信息</h2>
+		<div class="text" style="padding:7px 0; font-size:12px; margin:0; line-height:20px" id="passengerList">
+        </div>
+		</li>
+	</ul>
+	<ul class="round">
+		<li>
+		<h2 style="padding:5px 0; font-size:14px">行程单</h2>
+		<div class="text" style="padding:7px 0; font-size:12px; margin:0; line-height:20px">
+配送方式：<strong id="itinerary_deliveryType"></strong><br />
+地址：<strong id="itinerary_address"></strong><br />
+联系人：<strong id="itinerary_catchUser"></strong><br />
+城市：<strong id="itinerary_city"></strong><br />
+手机号：<strong id="itinerary_mobile"></strong><br />
+邮编：<strong id="itinerary_postCode"></strong><br />
+发票金额：<strong id="itinerary_price"></strong><br />
+发票抬头：<strong id="itinerary_invoiceTitle"></strong><br />
+发票类型：<strong id="itinerary_invoiceType"></strong>
+        </div>
+		</li>
+	</ul>
+	<ul class="round">
+		<li>
+		<h2 style="padding:5px 0; font-size:14px">使用联系人</h2>
+		<div class="text" style="padding:7px 0; font-size:12px; margin:0; line-height:20px">
+姓名：<strong id="useContact_name"></strong><br />
+邮箱：<strong id="useContact_email"></strong><br />
+手机：<strong id="useContact_mobile"></strong>
+        </div>
+		</li>
+	</ul>
+	<ul class="round">
+		<li>
+		<h2 style="padding:5px 0; font-size:14px">购买联系人</h2>
+		<div class="text" style="padding:7px 0; font-size:12px; margin:0; line-height:20px">
+姓名：<strong id="buyContact_name"></strong><br />
+邮箱：<strong id="buyContact_email"></strong><br />
+手机：<strong id="buyContact_mobile"></strong>
+        </div>
+		</li>
+	</ul>
+
+
+
+<script type="text/javascript">
+$(function(){
+	rights=JSON.parse(localStorage['rights$rightsCode']);
+	$("#rights_rightsId").html(rights.rightsId);
+	$("#rights_rightsCode").html(rights.rightsCode);
+	$("#rights_sts").html(rights_sts[rights.sts]);
+	$("#rights_cardSts").html(rights_cardSts[rights.cardSts]);
+	$("#rights_paySts").html(rights_paySts[rights.paySts]);
+	$("#rights_price").html(rights.price);
+	$("#rights_actualPay").html(rights.actualPay);
+	$("#rights_adultPrice").html(rights.adultPrice);
+	$("#rights_childPrice").html(rights.childPrice);
+	$("#rights_departureDate").html(rights.departureDate);
+	$("#rights_payTime").html(rights.payTime);
+	$("#rights_payType").html(rights.payType);
+	$("#rights_childNum").html(rights.childNum);
+	$("#rights_adultNum").html(rights.adultNum);
+	$("#rights_adultPrice").html(rights.adultPrice);
+	$("#rights_childPrice").html(rights.childPrice);
+	$("#rights_departCity").html(rights.departCity);
+	$("#rights_departCityName").html(rights.departCityName);
+	$("#rights_createTime").html(rights.createTime);
+
+	var html_temp="";
+	$.each(rights.appointmentList, function(i,rs){		
+		html_temp+='产品id：'+rs.prodID+'<br />产品名称：'+rs.title+'<br />预约状态：'+appointmentList_sts[rs.sts]+'<br />';
+		if(i<rights.appointmentList.length-1)html_temp+="-----------------<br />";
+	});
+	$("#appointmentList").html(html_temp);
+	
+	var html_temp="";
+	$.each(rights.passengerList, function(i,rs){		
+		html_temp+='姓名：'+rs.name+'<br />证件号：'+rs.certNo+'<br />证件类型：'+rs.certType+'<br />出生日期：'+rs.birthday+'<br />电话：'+rs.mobile+'<br />游客类型：'+passengerList_type[rs.type]+'<br />';
+		if(i<rights.appointmentList.length-1)html_temp+="-----------------<br />";
+	});
+	$("#passengerList").html(html_temp);
+
+	$("#itinerary_deliveryType").html(itinerary_deliveryType[rights.itinerary.deliveryType]);
+	$("#itinerary_address").html(rights.itinerary.address);
+	$("#itinerary_catchUser").html(rights.itinerary.catchUser);
+	$("#itinerary_city").html(rights.itinerary.city);
+	$("#itinerary_mobile").html(rights.itinerary.mobile);
+	$("#itinerary_postCode").html(rights.itinerary.postCode);
+	$("#itinerary_price").html(rights.itinerary.price);
+	$("#itinerary_invoiceTitle").html(rights.itinerary.invoiceTitle);
+	$("#itinerary_invoiceType").html(rights.itinerary.invoiceType);
+	
+	$("#useContact_email").html(rights.useContact.email);
+	$("#useContact_name").html(rights.useContact.name);
+	$("#useContact_mobile").html(rights.useContact.mobile);
+	
+	$("#buyContact_email").html(rights.buyContact.email);
+	$("#buyContact_name").html(rights.buyContact.name);
+	$("#buyContact_mobile").html(rights.buyContact.mobile);
+
+})
+</script>
+
+
+
+</div>
+<!--
+EOT;
+?>
+-->

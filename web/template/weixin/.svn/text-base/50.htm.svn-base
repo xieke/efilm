@@ -1,0 +1,115 @@
+<!--
+<?php
+print <<<EOT
+-->
+<div class="cardexplain">
+
+
+
+<!--
+EOT;
+if($job=='ok'){
+print <<<EOT
+-->
+	<ul class="round">
+		<li>
+		<h2 class="succeed">恭喜您！购卡成功</h2>
+		<div class="text" style="padding:0px 20px">您可以凭订单号在任何一家和平影都门店领取实体会员卡。
+		<div class="text" style="padding:12px 20px 0 0px; border-top:1px dashed #ccc">
+<strong>订单号：</strong>123456789<br />
+<strong>订单状态：</strong><strong style=" color:#090; font-weight:normal">已支付</strong><br />
+<strong>订单金额：</strong>2000 元<br />
+<strong>订单内容：</strong>至尊铂金卡 X 1张<br />
+<strong>订单日期：</strong>2014年3月21日
+        </div>
+        </div>
+		</li>
+	</ul>
+<div class="footReturn">
+	<input class="submit" onclick="window.location.href='$webdb[www_url]/49.html'" value="确定" type="button" />
+</div>
+<!--
+EOT;
+}elseif($job=='ok2'){
+print <<<EOT
+-->
+	<ul class="round">
+		<li>
+		<h2 class="succeed">操作提示</h2>
+		<div class="text" style="padding:0px 20px">恭喜，您的会员卡已经成功充值 200 元，即时生效！
+		<div class="text" style="padding:12px 20px 0 0; border-top:1px dashed #ccc">
+<strong>订单号：</strong>123456789<br />
+<strong>订单状态：</strong><strong style=" color:#090; font-weight:normal">已支付</strong><br />
+<strong>卡片名称：</strong>和平影都至尊铂金卡<br />
+<strong>会员卡号：</strong>20141541021541<br />
+<strong>充值金额：</strong>200 元<br />
+<strong>充值日期：</strong>2014年3月21日
+        </div>
+        </div>
+		</li>
+	</ul>
+<div class="footReturn">
+	<input class="submit" onclick="window.location.href='$webdb[www_url]/49.html'" value="确定" type="button" />
+</div>
+<!--
+EOT;
+}else{
+print <<<EOT
+-->
+
+
+	<ul class="round">
+		<li>
+			<span style="background:none; padding-right:0">欢迎选购上海和平影都会员卡<em style="right:0" class="ok">4</em></span>
+		</li>
+	</ul>
+
+
+
+	<ul class="round">
+		<li><span class="img_list2"><a href="$webdb[www_url]/50.html?job=ok">
+			<img src="$webdb[www_url]/images/member_card.png" style="width:90px; height:60px; margin-top:4px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;" />
+			<strong> VIP至尊金卡</strong> <strong class="tags_blue">HOT</strong>
+            <div class="img_list2_p" style="line-height:100%">
+            购票折扣：5折<br />
+            卡片面值：<strong>￥<strong>2000</strong></strong>
+            </div>
+        </a></span></li>
+		<li><span class="img_list2"><a href="$webdb[www_url]/50.html?job=ok">
+			<img src="$webdb[www_url]/images/member_card.png" style="width:90px; height:60px; margin-top:4px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;" />
+			<strong> 达人金卡</strong>
+            <div class="img_list2_p" style="line-height:100%">
+            购票折扣：7折<br />
+            卡片面值：<strong>￥<strong>1000</strong></strong>
+            </div>
+        </a></span></li>
+		<li><span class="img_list2"><a href="$webdb[www_url]/50.html?job=ok">
+			<img src="$webdb[www_url]/images/member_card.png" style="width:90px; height:60px; margin-top:4px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;" />
+			<strong> 乐享金卡</strong>
+            <div class="img_list2_p" style="line-height:100%">
+            购票折扣：8折<br />
+            卡片面值：<strong>￥<strong>800</strong></strong>
+            </div>
+        </a></span></li>
+		<li><span class="img_list2"><a href="$webdb[www_url]/50.html?job=ok">
+			<img src="$webdb[www_url]/images/member_card.png" style="width:90px; height:60px; margin-top:4px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;" />
+			<strong> 实惠影迷卡</strong>
+            <div class="img_list2_p" style="line-height:100%">
+            购票折扣：9.8折<br />
+            卡片面值：<strong>￥<strong>300</strong></strong>
+            </div>
+        </a></span></li>
+	</ul>
+<!--
+EOT;
+}
+print <<<EOT
+-->
+
+
+
+</div>
+<!--
+EOT;
+?>
+-->

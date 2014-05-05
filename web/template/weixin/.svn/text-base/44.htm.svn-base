@@ -1,0 +1,165 @@
+<!--
+<?php
+print <<<EOT
+-->
+<div class="cardexplain">
+	<ul class="round">
+		<li><span class="img_list2" style="background:none; padding-right:0">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="tags_blue">3D</strong>
+            <div class="img_list2_p" style="line-height:140%">
+            导演：多米尼克·塞纳<br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            片长：98分钟<br />
+            地区：美国<br />
+            上映：2014年2月1日<br />
+            好评 ( <strong style="font-size:14px; color:#61a00e">82</strong> ) &nbsp; 中评 ( <strong style="font-size:14px; color:#FF6600">24</strong> ) &nbsp; 差评 ( <strong style="font-size:14px; color:#FF0000">5</strong> )
+            </div>
+        </span></li>
+	</ul>
+<!--
+EOT;
+if($job=="new"){
+print <<<EOT
+-->
+    <div class="footReturn">
+    	<input class="submit" onclick="alert2('影片关注成功',this);setTimeout('window.location.href=&quot;$webdb[www_url]/43_new.html&quot;',3000)" value="关注此影片" type="button">
+    </div>
+<!--
+EOT;
+}else{
+print <<<EOT
+-->
+    <div class="footReturn">
+    	<input class="submit" onclick="window.location.href='$webdb[www_url]/45.html'" value="选座购票" type="button">
+    </div>
+<!--
+EOT;
+}
+print <<<EOT
+-->
+
+
+
+
+<!--
+EOT;
+if($job=="yp"){
+print <<<EOT
+-->
+    <table class="radio_select" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td><a href="$webdb[www_url]/{$fid}.html">介绍</a></td>
+        <td><a href="$webdb[www_url]/{$fid}.html?job=yg">预告片</a></td>
+        <td><a class="select" href="$webdb[www_url]/{$fid}.html?job=yp">影评(5)</a></td>
+      </tr>
+    </table>
+
+  <ul class="round">
+      <li class="title mb"><span class="none">电影评论 (12)<em class="error" style="padding:0 16px; top:47%"><a href="#">发布影评</a></em></li>
+	  <li class="nob">
+        <table class="kuang img_list" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr class="img_list_title">
+            <th rowspan="2"><img src="$webdb[www_url]/images/userface.png" /></th>
+            <td>爱吃鱼的猫</td><td>★★★★☆</td><td style="text-align:right; width:auto">2014-04-10</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="img_list_content">看开头的时候我以为是恐怖片。。。主角们穿着怪异。。。那结尾实在是太扯了~美女被鬼附身的故事么。。。。。。。。</td>
+          </tr>
+        </tbody></table>
+      </li>
+	  <li class="nob">
+        <table class="kuang img_list" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr class="img_list_title">
+            <th rowspan="2"><img src="$webdb[www_url]/images/userface.png" /></th>
+            <td>ryeowooks</td><td>★★★★★</td><td style="text-align:right; width:auto">2014-04-10</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="img_list_content">路过地铁海报看到的，尼古拉斯演的 应该不错，于是带上我朋友去看。</td>
+          </tr>
+        </tbody></table>
+      </li>
+	  <li class="nob">
+        <table class="kuang img_list" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr class="img_list_title">
+            <th rowspan="2"><img src="$webdb[www_url]/images/userface.png" /></th>
+            <td>罐罐菌</td><td>★★★★☆</td><td style="text-align:right; width:auto">2014-04-10</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="img_list_content">之前没看宣传，就知道有这么一部片子，昨天想看看史诗片，就找来看了下……</td>
+          </tr>
+        </tbody></table>
+      </li>
+	  <li class="nob">
+        <table class="kuang img_list" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr class="img_list_title">
+            <th rowspan="2"><img src="$webdb[www_url]/images/userface.png" /></th>
+            <td>jilan870815</td><td>★★★★★</td><td style="text-align:right; width:auto">2014-04-10</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="img_list_content">这是山寨的古装艾利之书吗</td>
+          </tr>
+        </tbody></table>
+      </li>
+	<li class="nob"><a href="#" style="display:block; text-align:center; background:#f1f1f1; margin-top:10px; font-size:12px">查看更多影评</a></li>
+  </ul>
+
+<!--
+EOT;
+}elseif($job=="yg"){
+print <<<EOT
+-->
+    <table class="radio_select" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td><a href="$webdb[www_url]/{$fid}.html">介绍</a></td>
+        <td><a class="select" href="$webdb[www_url]/{$fid}.html?job=yg">预告片</a></td>
+        <td><a href="$webdb[www_url]/{$fid}.html?job=yp">影评(5)</a></td>
+      </tr>
+    </table>
+<ul class="round">
+		<li>
+<div class="news_content">
+<video src="$webdb[www_url]/images/video2.mp4" controls="controls" width="100%" height="150" preload="auto" poster="$webdb[www_url]/images/movies1.jpg">
+your browser does not support the video tag
+</video></div>
+        </li>
+</ul>
+<!--
+EOT;
+}else{
+print <<<EOT
+-->
+    <table class="radio_select" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td><a class="select" href="$webdb[www_url]/{$fid}.html">介绍</a></td>
+        <td><a href="$webdb[www_url]/{$fid}.html?job=yg">预告片</a></td>
+        <td><a href="$webdb[www_url]/{$fid}.html?job=yp">影评(5)</a></td>
+      </tr>
+    </table>
+<ul class="round">
+		<li>
+<div class="news_content">
+        	<img src="$webdb[www_url]/images/movies1.jpg" />
+<p>一身伤痛的十字军骑士边沁（尼古拉斯·凯奇饰）和费尔森（朗·普尔曼饰）在外随国王的军队征战多年，终于换来暂时的和平，得以返回故乡。原以为可以在家安享来之不易生活的他们，却发现黑死病正在家乡的土地上肆虐，到处都是染病而无药可医的灾民。面对瘟疫的蔓延，束手无策的的教会，认为这一切的罪魁祸首是一名女巫（克莱尔·福伊饰），病重的红衣主教让二人把她押往远方的修道院，送上僧侣驱除瘟疫仪式的祭台。</p>
+<p>边沁答应了红衣主教的要求，而他护送的条件是，希望这名女孩能得到公正的审判。两人踏上了前往修道院的道路，在旅途中，他们渐渐的察觉到，这个女孩果然不是普通的人类，她拥有着深不可测的莫名力量，而一路上还有着来自地狱的恶魔在等着他们……</p>
+            <img src="$webdb[www_url]/images/movies2.jpg" />
+            <img src="$webdb[www_url]/images/movies3.jpg" />
+            <img src="$webdb[www_url]/images/movies4.jpg" />
+</div>
+</li></ul>
+<!--
+EOT;
+}
+print <<<EOT
+-->
+
+
+
+
+
+
+</div>
+<!--
+EOT;
+?>
+-->

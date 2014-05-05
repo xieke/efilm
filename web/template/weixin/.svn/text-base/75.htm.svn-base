@@ -1,0 +1,61 @@
+<!--
+<?php
+print <<<EOT
+-->
+<div class="cardexplain">
+
+
+
+
+
+
+	<a class="touch" href="#">
+    <ul class="round" style="margin-bottom:40px">
+		<li>
+		<h2 style="border-bottom:0; padding-top:15px; padding-bottom:5px; font-weight:bolder; color:#000">马尔代夫6天5晚自助游</h2>
+        <div style="padding-bottom:10px; font-size:12px; color:#999">2014-04-14</div>
+        <div class="qiandaobanner"><img src="$webdb[www_url]/images/lv3.jpg" /></div>
+		<div class="text" style="margin:0">此次51YOU和国家旅游局携手,推出了“关注微信、赢旅游”的系列活动之一...</div>
+        <span style="border-top:1px dotted #C6C6C6; color:#000; font-size:14px">阅读全文</span>
+		</li>
+	</ul></a>
+    
+    <a class="touch" href="#">
+    <ul class="round" style="margin-bottom:40px">
+		<li>
+		<h2 style="border-bottom:0; padding-top:15px; padding-bottom:5px; font-weight:bolder; color:#000">马尔代夫6天5晚自助游</h2>
+        <div style="padding-bottom:10px; font-size:12px; color:#999">2014-04-14</div>
+        <div class="qiandaobanner"><img src="$webdb[www_url]/images/lv3.jpg" /></div>
+		<div class="text" style="margin:0">此次51YOU和国家旅游局携手,推出了“关注微信、赢旅游”的系列活动之一...</div>
+        <span style="border-top:1px dotted #C6C6C6; color:#000; font-size:14px">阅读全文</span>
+		</li>
+	</ul></a>
+    
+    <a class="touch" href="#">
+    <ul class="round" style="margin-bottom:40px">
+		<li>
+		<h2 style="border-bottom:0; padding-top:15px; padding-bottom:5px; font-weight:bolder; color:#000">马尔代夫6天5晚自助游</h2>
+        <div style="padding-bottom:10px; font-size:12px; color:#999">2014-04-14</div>
+        <div class="qiandaobanner"><img src="$webdb[www_url]/images/lv3.jpg" /></div>
+		<div class="text" style="margin:0">此次51YOU和国家旅游局携手,推出了“关注微信、赢旅游”的系列活动之一...</div>
+        <span style="border-top:1px dotted #C6C6C6; color:#000; font-size:14px">阅读全文</span>
+		</li>
+	</ul></a>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+</div>
+<!--
+EOT;
+?>
+-->

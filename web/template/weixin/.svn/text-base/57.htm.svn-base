@@ -1,0 +1,55 @@
+<!--
+<?php
+print <<<EOT
+-->
+<div class="cardexplain">
+	<ul class="round">
+		<li><span class="img_list2" style="background:none; padding-right:0">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="tags_blue">3D</strong>
+            <div class="img_list2_p" style="line-height:170%">
+            场次：04月02日 11:00<br />
+            播放厅：3号放映厅<br />
+            座位号：<strong style=" background:#FF6600; color:#fff; font-weight:normal; padding:0 5px">7排7座</strong> <strong style=" background:#FF6600; color:#fff; font-weight:normal; padding:0 5px">7排8座</strong><br />
+            订单号：2014051421541<br />
+            </div>
+        </span></li>
+	</ul>
+
+  <div class="jifen-box">
+    <ul class="zongjifen">
+      <li>
+        <div class="fengexian">
+          <p><img src="$webdb[www_url]/images/ico_time2.png" width="50" height="50" /></p>
+        </div>
+      </li>
+      <li style="width:66%"><div style=" padding-left:20px">订单状态：<strong style="color:#1CC200">支付成功</strong><br />最晚退票：10小时23分钟</div></li>
+    </ul>
+    <div class="clr"></div>
+  </div>
+
+
+
+
+    <div class="footReturn">
+    	<input class="submit"  id="to_submit" value="我要退票" type="button">
+    </div>
+
+
+
+<script>
+$(function(){
+	$('#to_submit').click(function(){
+		alert2('退票成功',this);
+		setTimeout("window.location.href='$webdb[www_url]/list.php?fid=51'",3000);
+	})
+})
+</script>
+
+
+
+</div>
+<!--
+EOT;
+?>
+-->

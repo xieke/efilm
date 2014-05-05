@@ -1,0 +1,58 @@
+<!--
+<?php
+print <<<EOT
+-->
+
+
+
+<style>
+body{ background:#830c28}
+</style>
+<div class="ad_head">
+	<img src="$webdb[www_url]/images/ad_4.jpg" />
+    <div class="ad_title">活动专题页--开卡返现</div>
+</div>
+
+
+
+<div class="cardexplain">
+
+	<ul class="round">
+		<li style="border:0"><h2 class="succeed">恭喜您！开卡成功</h2></li>
+		<li style="border:0"><span class="img_list2 none" style="padding-bottom:0">
+			<img src="$webdb[www_url]/images/member_card.png" style="width:90px; height:60px; margin-top:4px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;" />
+			<strong> 至尊铂金卡</strong> <strong class="tags_blue">5折购票</strong>
+            <div class="img_list2_p" style="line-height:100%">
+            卡号：2008*********001<br />
+            余额：<strong>￥<strong>2000</strong></strong> &nbsp; 积分：<strong><strong>0</strong></strong>
+            </div>
+        </span></li>
+		<li style="padding:0px 6px 10px 6px">
+            <div class="hr"></div>
+            <div style="padding:0 10px">
+            <div style="font-size: 110%; font-weight:bolder;">领取方式：</div>
+请凭以下数字序号到任意分店领取<br />
+<strong style="font-size:20px; line-height:40px; color:#3675f2">89290118</strong>
+            </div>
+        </li>
+	</ul>
+
+
+
+
+<div class="footReturn">
+	<input class="del" onclick="window.location.href='$webdb[www_url]/53.html?job=4'" value="返回" type="button" />
+</div>
+
+
+
+
+</div>
+
+
+
+
+<!--
+EOT;
+?>
+-->

@@ -1,0 +1,69 @@
+<!--
+<?php
+print <<<EOT
+-->
+
+
+
+<style>
+body{ background:#830c28}
+</style>
+<div class="ad_head">
+	<img src="$webdb[www_url]/images/ad_4.jpg" />
+    <div class="ad_title">活动专题页--开卡返现</div>
+</div>
+
+
+
+<div class="cardexplain">
+	<ul class="round">
+		<li><span class="img_list2"><a href="$webdb[www_url]/60.html">
+			<img src="$webdb[www_url]/images/member_card.png" style="width:90px; height:60px; margin-top:4px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;" />
+			<strong> VIP至尊金卡</strong> <strong class="tags_blue">返200</strong>
+            <div class="img_list2_p" style="line-height:100%">
+            购票折扣：5折<br />
+            卡片面值：<strong>￥<strong>2000</strong></strong>
+            </div>
+        </a></span></li>
+        <li><span class="img_list2"><a href="$webdb[www_url]/60.html">
+			<img src="$webdb[www_url]/images/member_card.png" style="width:90px; height:60px; margin-top:4px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;" />
+			<strong> VIP至尊金卡</strong> <strong class="tags_blue">返100</strong>
+            <div class="img_list2_p" style="line-height:100%">
+            购票折扣：5折<br />
+            卡片面值：<strong>￥<strong>2000</strong></strong>
+            </div>
+        </a></span></li>
+        <li><span class="img_list2"><a href="$webdb[www_url]/60.html">
+			<img src="$webdb[www_url]/images/member_card.png" style="width:90px; height:60px; margin-top:4px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;" />
+			<strong> VIP至尊金卡</strong> <strong class="tags_blue">返80</strong>
+            <div class="img_list2_p" style="line-height:100%">
+            购票折扣：5折<br />
+            卡片面值：<strong>￥<strong>2000</strong></strong>
+            </div>
+        </a></span></li>
+        <li><span class="img_list2"><a href="$webdb[www_url]/60.html">
+			<img src="$webdb[www_url]/images/member_card.png" style="width:90px; height:60px; margin-top:4px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;" />
+			<strong> VIP至尊金卡</strong> <strong class="tags_blue">返50</strong>
+            <div class="img_list2_p" style="line-height:100%">
+            购票折扣：5折<br />
+            卡片面值：<strong>￥<strong>2000</strong></strong>
+            </div>
+        </a></span></li>
+        <li><span class="img_list2"><a href="$webdb[www_url]/60.html">
+			<img src="$webdb[www_url]/images/member_card.png" style="width:90px; height:60px; margin-top:4px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;" />
+			<strong> VIP至尊金卡</strong> <strong class="tags_blue">返20</strong>
+            <div class="img_list2_p" style="line-height:100%">
+            购票折扣：5折<br />
+            卡片面值：<strong>￥<strong>2000</strong></strong>
+            </div>
+        </a></span></li>
+	</ul>
+</div>
+
+
+
+
+<!--
+EOT;
+?>
+-->

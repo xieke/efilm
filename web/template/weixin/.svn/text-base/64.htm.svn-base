@@ -1,0 +1,87 @@
+<!--
+<?php
+$type||$type=1;
+$select[$type]=' class="select" ';
+print <<<EOT
+-->
+<div class="cardexplain">
+
+
+
+
+    <table class="radio_select" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td><a $select[1] href="$webdb[www_url]/{$fid}.html">推荐</a></td>
+        <td><a $select[2] href="$webdb[www_url]/{$fid}.html?type=2">普通</a></td>
+      </tr>
+    </table>
+
+
+
+	<ul class="round">
+		<li id="ajax_load_more"><img src="$wedb[www_url]/images/ajax-loader-16.gif"></li>
+	</ul>
+<style>
+#ajax_load_more{ display:none; text-align:center; padding:10px 10px 6px 10px}
+</style>
+<script type="text/javascript">
+var ajax_able=true;
+var pageNo=1;
+var showPageCount=99;
+var type="$job";//01.热门，02.冷门
+$(function () {
+		request_list();
+}); 
+
+
+
+
+
+
+
+
+window.onscroll=function(){
+	var a = document.documentElement.scrollTop==0? document.body.clientHeight : document.documentElement.clientHeight;
+	var b = document.documentElement.scrollTop==0? document.body.scrollTop : document.documentElement.scrollTop;
+	var c = document.documentElement.scrollTop==0? document.body.scrollHeight : document.documentElement.scrollHeight;
+	if((a+b==c)&&ajax_able&&(pageNo<=showPageCount)){
+		ajax_able=false;
+		request_list();
+	}else if((a+b==c)&&ajax_able&&(pageNo>showPageCount)){
+		$("#ajax_load_more").html("已经是最后一条记录").show();
+	}
+}
+function request_list(){
+	$("#ajax_load_more").show();
+	$.post("$webdb[www_url]/ajax-hna.json",{"action":"web/phone/prod/tourpre/querytourpre","deptCode":"001","type":type,"pageSize":"10","pageNo":pageNo},function(result){
+		if(result.resultCode==""){
+			json_insert_html(result.result.data);
+			showPageCount=result.result.pageInfo.showPageCount;
+			pageNo++;
+		}else{
+			alert(result.resultCode);
+		}
+		$("#ajax_load_more").hide();
+		ajax_able=true;
+	},'json');
+}
+function json_insert_html(result){
+	var html_temp="";
+	$.each(result, function(i,rs){
+		localStorage[rs.id]=JSON.stringify(rs);
+		html_temp='<li><span class="img_list2"><a href="$webdb[www_url]/65.html?id='+rs.id+'"><img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" /><strong>'+rs.name+'</strong><strong class="txt_blue"></strong> <strong class="tags_imax">'+rs.hotType+'</strong><div class="img_list2_p">天数：'+rs.dayNum+' 天 '+rs.nightNum+' 晚<br />酒店：'+rs.hotelStar+' 星级<br />路线：'+rs.deptPlace+' 到 '+rs.desination+'<br />成人价：<strong>￥<strong>'+rs.adultSalePrice+'</strong></strong> &nbsp; 儿童价：<strong>￥<strong>'+rs.childSalePrice+'</strong></strong></div></a></span></li>'+html_temp;
+	});	
+	$("#ajax_load_more").before(html_temp);
+}
+
+
+
+
+
+
+</script>
+</div>
+<!--
+EOT;
+?>
+-->

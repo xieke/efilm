@@ -1,0 +1,56 @@
+<!--
+<?php
+print <<<EOT
+-->
+<div class="cardexplain">
+
+
+	<ul class="round">
+		<li>
+		<h2 class="succeed">购票订单支付成功</h2>
+		<div class="text" style="padding:0">
+       	  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="text-align:right; line-height:16px; font-size:12px">
+            	<tr>
+                	<td style="text-align:left">《魔女神兵》 X 2</td>
+                    <td style="font-size:12px; text-align:center">04月02日 11:00<br />3号放映厅</td>
+                    <td><strong style="color:#FF6600"><strong style="font-size:10px">￥</strong>60</strong></td>
+                    <td style="color:#090">已支付</td>
+                </tr>
+            </table>
+        </div>
+	  </li>
+	</ul>
+
+	<ul class="round">
+		<li>
+		<h2 style="padding:5px 0; font-size:14px">请使用以下串码到现场取票</h2>
+		<div class="text" style="padding:20px 0; text-align:center; font-size:20px; font-weight:bolder; margin:0; line-height:20px">TKT090001000298377</div>
+		</li>
+	</ul>
+
+<ul class="round">
+		<li class="title mb"><span class="none">您也可以将串码发送到手机</span></li>
+		<li class="nob">
+			<table class="kuang" border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<th>手机号码</th>
+					<td><input name="truename" class="px" id="truename" value="" placeholder="填写接收串码短信的手机" type="tel"></td>
+				</tr>
+			</table>
+		</li>
+	</ul>
+
+
+<div class="footReturn">
+	<input class="submit" onclick="alert2('短信发送成功',this)" value="将串码发送到手机" type="button" />
+</div>
+<div class="footReturn">
+	<input class="del" onclick="window.location.href='$webdb[www_url]/51.html'" value="返回" type="button" />
+</div>
+
+
+</div>
+<!--
+EOT;
+?>
+-->

@@ -1,0 +1,67 @@
+<!--
+<?php
+$type[0]=$db->get_one("SELECT count(*) num FROM {$pre}address WHERE username='$lfjid' AND type='0' ");
+$type[1]=$db->get_one("SELECT count(*) num FROM {$pre}address WHERE username='$lfjid' AND type='1' ");
+print <<<EOT
+-->
+
+<div class="cardcenter">
+  <div class="card"><img class="cardbg" src="$webdb[www_url]/images/card.png">
+    <h1>易生如意卡</h1>
+    <strong class="pdo verify"><span id="cdnb" ><em >普通会员</em>13636686104</span></strong> </div>
+  <p class="explain"><span>使用时向门店出示此卡</span></p>
+</div>
+<div class="cardexplain" > 
+  
+  <!--会员积分信息-->
+  <div class="jifen-box">
+    <ul class="zongjifen">
+      <li>
+        <div class="fengexian">
+          <p>我的积分</p>
+          <span id="jf">0</span></div>
+      </li>
+      <li><a href="$webdb[www_url]/11.html">
+        <div class="fengexian">
+          <p>等待取件</p>
+          <span id="qj">0</span></div>
+        </a></li>
+      <li><a href="$webdb[www_url]/11.html?fid=11&job=send">
+        <p>预约发件</p>
+        <span id="fj">0</span></a></li>
+    </ul>
+    <div class="clr"></div>
+  </div>
+
+
+	<!--后台可控制是否显示-->
+	<ul class="round">
+		<li class="tel"><a href="tel:400-828-1870"><span>客服热线： 400-828-1870</span></a></li>
+	</ul>
+
+
+  <ul class="round">
+    <li><a href="$webdb[www_url]/10.html"><span>收货地址管理<em class="error">{$type[0][num]}</em></span></a></li>
+    <li><a href="$webdb[www_url]/10.html?job=send"><span>发货地址管理<em class="error">{$type[1][num]}</em></span></a></li>
+    <li><a href="$webdb[www_url]/13.html"><span>修改登录密码</span></a></li>
+  </ul>
+</div>
+<script>
+$(function(){
+		$.post("$webdb[www_url]/ajax-service.json",{"method":"getExpressStat"},function(result){
+
+$("#jf").html(result.成功揽件数量);
+$("#qj").html(result.等待取件数量);
+$("#fj").html(result.预约揽件数量);
+
+
+
+
+
+		},'json')
+})
+</script>
+<!--
+EOT;
+?>
+-->

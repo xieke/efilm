@@ -1,0 +1,138 @@
+<!--
+<?php
+print <<<EOT
+-->
+
+<style>
+body{ background:#d54b02}
+</style>
+<div class="ad_head">
+	<img src="$webdb[www_url]/images/ad_6.jpg" />
+</div>
+
+
+<!--
+EOT;
+if(!$job){
+print <<<EOT
+-->
+<div class="cardexplain">
+	<ul class="round">
+		<li style="padding:10px 6px">
+        	<div style="padding:0 10px">
+                <strong>活动：</strong><strong style="color:#FF6600">幸运大转盘，百万礼品送不停</strong><br />
+                <strong>时段：</strong>2014年5月1日~2014年5月31日<br />
+                <strong>范围：</strong>通过微信成功购票的用户<br />
+                <strong>兑现：</strong>用户凭中奖码至门店兑换实物奖品
+            </div>
+            <div class="hr"></div>
+            <div style="padding:0 10px">
+            <div style="font-size: 110%; font-weight:bolder;">活动内容</div>
+1、用户每购买1张指定电影票,就可以获得一次转动转盘的机会。<br />
+2、每个用户可以无限次数参与活动。<br />
+3、领取时间为2014年5月01日至31日。<br />
+4、本次活动最终解释权归主办方所有。
+            </div>
+        </li>
+	</ul>
+	<ul class="round roundyellow">
+		<li class="gift other_select"><a href="?job=list"><span><strong>我了解了，马上参与</strong></span></a></li>
+	</ul>
+</div>
+<!--
+EOT;
+}elseif($job=='list'){
+print <<<EOT
+-->
+<style>
+.round li span img.ico_small{ width:12px; height:12px; float:inherit; margin-right:4px; margin-bottom:-2px}
+</style>
+<div class="cardexplain">
+	<ul class="round">
+		<li><span class="img_list2"><a href="?job=buy">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="txt_blue">8.5</strong> <strong class="tags_blue">3D</strong>
+            <div class="img_list2_p">
+            <img src="$webdb[www_url]/images/ico_time.png" class="ico_small" />限时折扣 &nbsp;
+            <img src="$webdb[www_url]/images/ico_double.png" class="ico_small" />双倍积分 <br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            上映时间：2014年2月1日<br />
+            会员价：<strong>￥<strong>25</strong> 元起</strong>
+            </div>
+        </a></span></li>
+		<li><span class="img_list2"><a href="?job=buy">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="txt_blue">8.5</strong> <strong class="tags_imax">IMAX</strong>
+            <div class="img_list2_p">
+            <img src="$webdb[www_url]/images/ico_coffee.png" class="ico_small" />观影送礼 &nbsp;
+            <img src="$webdb[www_url]/images/ico_double.png" class="ico_small" />双倍积分 <br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            上映时间：2014年2月1日<br />
+            会员价：<strong>￥<strong>25</strong> 元起</strong>
+            </div>
+        </a></span></li>
+        <li><span class="img_list2"><a href="?job=buy">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="txt_blue">8.5</strong> <strong class="tags_blue">3D</strong>
+            <div class="img_list2_p">
+            <img src="$webdb[www_url]/images/ico_time.png" class="ico_small" />限时折扣 &nbsp;
+            <img src="$webdb[www_url]/images/ico_coffee.png" class="ico_small" />观影送礼<br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            上映时间：2014年2月1日<br />
+            会员价：<strong>￥<strong>25</strong> 元起</strong>
+            </div>
+        </a></span></li>
+	</ul>
+</div>
+<!--
+EOT;
+}elseif($job=='buy'){
+print <<<EOT
+-->
+<style>
+.round li span img.ico_small{ width:12px; height:12px; float:inherit; margin-right:4px; margin-bottom:-2px}
+</style>
+<div class="cardexplain">
+
+	<ul class="round">
+		<li style="border:0"><h2 class="succeed">购票成功，您获得一次抽奖机会！</h2></li>
+		<li style="border:0"><span class="img_list2 none" style="padding-bottom:0">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="txt_blue">8.5</strong> <strong class="tags_imax">IMAX</strong>
+            <div class="img_list2_p">
+            <img src="$webdb[www_url]/images/ico_coffee.png" class="ico_small" />观影送礼 &nbsp;
+            <img src="$webdb[www_url]/images/ico_double.png" class="ico_small" />双倍积分 <br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            上映时间：2014年2月1日<br />
+            会员价：<strong>￥<strong>25</strong> 元起</strong>
+            </div>
+        </a></span></li>
+		<li style="padding:0px 6px 10px 6px">
+            <div class="hr"></div>
+            <div style="padding:0 10px">
+            <div style="font-size: 110%; font-weight:bolder;">抽奖说明：</div>
+请点击下面的按钮进行抽奖，有效期：<br />
+<strong style="font-size:20px; line-height:40px; color:#3675f2">2014-05-31</strong>
+            </div>
+        </li>
+	</ul>
+
+	<ul class="round roundyellow">
+		<li class="gift other_select"><a href="$webdb[www_url]/activity/"><span><strong>立即抽奖</strong></span></a></li>
+	</ul>
+
+</div>
+<!--
+EOT;
+}
+print <<<EOT
+-->
+
+
+
+
+
+<!--
+EOT;
+?>
+-->

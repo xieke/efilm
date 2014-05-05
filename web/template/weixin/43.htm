@@ -1,0 +1,153 @@
+<!--
+<?php
+print <<<EOT
+-->
+<style>
+.round li span img.ico_small{ width:12px; height:12px; float:inherit; margin-right:4px; margin-bottom:-2px}
+</style>
+
+
+
+
+<div class="top_bar" style="top:0; bottom:inherit">
+  <nav>
+    <ul class="top_menu">
+      <li class="submenu"><a href="$webdb[www_url]/42.html">上海和平影都 <span style="width: 0;height: 0; margin-bottom:3px;border-top: 4px solid #fff;border-left: 3px solid transparent;border-right:3px solid transparent"></span></a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<!--
+EOT;
+if($job){
+print <<<EOT
+-->
+<div class="cardexplain">
+    <table class="radio_select" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td><a href="$webdb[www_url]/{$fid}.html">热播影片</a></td>
+        <td><a class="select" href="$webdb[www_url]/{$fid}.html?job=new">即将上映</a></td>
+      </tr>
+    </table>
+
+
+	<ul class="round">
+		<li><span class="img_list2"><a href="$webdb[www_url]/44.html?job=new">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong>
+            <div class="img_list2_p">
+            档期：5月份<br />
+            导演：多米尼克·塞纳<br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            关注：<strong class="star_txt">★★★★☆</strong> 569条评价
+            </div>
+        </a></span></li>
+		<li><span class="img_list2"><a href="$webdb[www_url]/44.html?job=new">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong>
+            <div class="img_list2_p">
+            档期：5月份<br />
+            导演：多米尼克·塞纳<br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            关注：<strong class="star_txt">★★★★☆</strong> 569条评价
+            </div>
+        </a></span></li>
+	</ul>
+
+
+
+</div>
+<!--
+EOT;
+}else{
+print <<<EOT
+-->
+<div class="cardexplain">
+    <table class="radio_select" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td><a class="select" href="$webdb[www_url]/{$fid}.html">热播影片</a></td>
+        <td><a href="$webdb[www_url]/{$fid}.html?job=new">即将上映</a></td>
+      </tr>
+    </table>
+
+
+	<ul class="round">
+		<li><span class="img_list2"><a href="$webdb[www_url]/44.html">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="txt_blue">8.5</strong> <strong class="tags_blue">3D</strong>
+            <div class="img_list2_p">
+            <img src="$webdb[www_url]/images/ico_time.png" class="ico_small" />限时折扣 &nbsp;
+            <img src="$webdb[www_url]/images/ico_double.png" class="ico_small" />双倍积分 <br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            上映时间：2014年2月1日<br />
+            会员价：<strong>￥<strong>25</strong> 元起</strong>
+            </div>
+        </a></span></li>
+		<li><span class="img_list2"><a href="$webdb[www_url]/44.html">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="txt_blue">8.5</strong> <strong class="tags_imax">IMAX</strong>
+            <div class="img_list2_p">
+            <img src="$webdb[www_url]/images/ico_coffee.png" class="ico_small" />观影送礼 &nbsp;
+            <img src="$webdb[www_url]/images/ico_double.png" class="ico_small" />双倍积分 <br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            上映时间：2014年2月1日<br />
+            会员价：<strong>￥<strong>25</strong> 元起</strong>
+            </div>
+        </a></span></li>
+        <li><span class="img_list2"><a href="$webdb[www_url]/44.html">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="txt_blue">8.5</strong> <strong class="tags_blue">3D</strong>
+            <div class="img_list2_p">
+            <img src="$webdb[www_url]/images/ico_time.png" class="ico_small" />限时折扣 &nbsp;
+            <img src="$webdb[www_url]/images/ico_coffee.png" class="ico_small" />观影送礼<br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            上映时间：2014年2月1日<br />
+            会员价：<strong>￥<strong>25</strong> 元起</strong>
+            </div>
+        </a></span></li>
+        <li><span class="img_list2"><a href="$webdb[www_url]/44.html">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="txt_blue">8.5</strong> <strong class="tags_blue">3D</strong>
+            <div class="img_list2_p">
+            <img src="$webdb[www_url]/images/ico_time.png" class="ico_small" />限时折扣 &nbsp;
+            <img src="$webdb[www_url]/images/ico_double.png" class="ico_small" />双倍积分 <br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            上映时间：2014年2月1日<br />
+            会员价：<strong>￥<strong>25</strong> 元起</strong>
+            </div>
+        </a></span></li>
+        <li><span class="img_list2"><a href="$webdb[www_url]/44.html">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="txt_blue">8.5</strong> <strong class="tags_blue">3D</strong>
+            <div class="img_list2_p">
+            <img src="$webdb[www_url]/images/ico_coffee.png" class="ico_small" />观影送礼 &nbsp;
+            <img src="$webdb[www_url]/images/ico_double.png" class="ico_small" />双倍积分 <br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            上映时间：2014年2月1日<br />
+            会员价：<strong>￥<strong>25</strong> 元起</strong>
+            </div>
+        </a></span></li>
+        <li><span class="img_list2"><a href="$webdb[www_url]/44.html">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="txt_blue">8.5</strong> <strong class="tags_blue">3D</strong>
+            <div class="img_list2_p">
+            <img src="$webdb[www_url]/images/ico_time.png" class="ico_small" />限时折扣 &nbsp;
+            <img src="$webdb[www_url]/images/ico_double.png" class="ico_small" />双倍积分 <br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            上映时间：2014年2月1日<br />
+            会员价：<strong>￥<strong>25</strong> 元起</strong>
+            </div>
+        </a></span></li>
+	</ul>
+
+
+
+
+
+</div>
+<!--
+EOT;
+}
+?>
+-->

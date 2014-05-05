@@ -1,0 +1,193 @@
+<!--
+<?php
+$menu='51you';
+if(!$id)showerr("该旅游产品不存在或已经下架，请重新选择！");
+print <<<EOT
+-->
+<div class="cardexplain">
+	<ul class="round">
+		<li><span class="img_list2" style="background:none; padding-right:0">
+			<img src="$webdb[www_url]/images/lv1.jpg" style="width:90px; height:110px" />
+			<strong id="goods_name"></strong> <strong class="tags_blue" id="goods_hotType"></strong>
+            <div class="img_list2_p" style="line-height:140%">
+            产品状态：<strong id="goods_sts"></strong><br />
+            天数：<strong id="goods_dayNum"></strong>天<strong id="goods_nightNum"></strong>晚<br />
+            酒店：<strong id="goods_hotelStar"></strong> 星级<br />
+            路线：<strong id="goods_deptPlace"></strong> 到 <strong id="goods_desination"></strong><br />
+            市场价：<strong id="goods_reference"></strong> 元<br />
+            成人价：<strong id="goods_adultSalePrice"></strong> 元<br />
+            儿童价：<strong id="goods_childSalePrice"></strong> 元<br />
+            库存：<strong class="star_txt" style="line-height:140%" id="goods_repertoryNum"> 件</strong>
+            </div>
+        </span></li>
+	</ul>
+
+    <div class="footReturn">
+    	<input class="submit" onclick="localStorage['$ab']=localStorage['$id'];window.location.href='$webdb[www_url]/67.html'" value="购买该产品" type="button">
+    </div>
+
+
+<script type="text/javascript">
+$(function(){
+	if(typeof(localStorage["$id"])=='undefined'){
+		alert("数据加载失败，请重新选择！");
+		window.location.href='$webdb[www_url]/67.html';
+	}else{
+		goods=JSON.parse(localStorage["$id"]);
+		$("#goods_flightId").html(goods.flightId);
+		$("#goods_destinationId").html(goods.destinationId);
+		$("#goods_name").html(goods.name);
+		$("#goods_deptCode").html(goods.deptCode);
+		$("#goods_deptPlace").html(goods.deptPlace);
+		$("#goods_destinationCode").html(goods.destinationCode);
+		$("#goods_desination").html(goods.desination);
+		$("#goods_hotelStar").html(goods.hotelStar);
+		$("#goods_hotelInfo").html(goods.hotelInfo);
+		$("#goods_adultSalePrice").html(goods.adultSalePrice);
+		$("#goods_childSalePrice").html(goods.childSalePrice);
+		$("#goods_diffSalePrice").html(goods.diffSalePrice);
+		$("#goods_reference").html(goods.reference);
+		$("#goods_dayNum").html(goods.dayNum);
+		$("#goods_nightNum").html(goods.nightNum);
+		$("#goods_sts").html(goods.sts);
+		$("#goods_tourType").html(goods.tourType);
+		$("#goods_hotType").html(goods.hotType);
+		$("#goods_repertoryNum").html(goods.repertoryNum);
+	}
+})
+</script>
+
+
+<!--
+EOT;
+if($tab=="2"){
+print <<<EOT
+-->
+    <table class="radio_select" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td><a href="$webdb[www_url]/{$fid}.html?id=$id">产品详情</a></td>
+        <td><a href="$webdb[www_url]/{$fid}.html?id=$id&tab=1">预订说明</a></td>
+        <td><a class="select" href="$webdb[www_url]/{$fid}.html?id=$id&tab=2">行程攻略</a></td>
+      </tr>
+    </table>
+
+  <ul class="round">
+      <li class="title mb"><span class="none">旅游评价 (12)<em class="error" style="padding:0 16px; top:47%"><a href="#">发布评价</a></em></li>
+	  <li class="nob">
+        <table class="kuang img_list" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr class="img_list_title">
+            <th rowspan="2"><img src="$webdb[www_url]/images/userface.png" /></th>
+            <td>爱吃鱼的猫</td><td>★★★★☆</td><td style="text-align:right; width:auto">2014-04-10</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="img_list_content">这次旅行非常愉快，旅游顾问杨小姐的服务也很热情，周到。。</td>
+          </tr>
+        </tbody></table>
+      </li>
+	  <li class="nob">
+        <table class="kuang img_list" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr class="img_list_title">
+            <th rowspan="2"><img src="$webdb[www_url]/images/userface.png" /></th>
+            <td>ryeowooks</td><td>★★★★★</td><td style="text-align:right; width:auto">2014-04-10</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="img_list_content">从前期咨询到出游，客服小姜很细心也很耐心，使我们的出游很顺利也很愉快！下次出游还会选择51YOU。</td>
+          </tr>
+        </tbody></table>
+      </li>
+	  <li class="nob">
+        <table class="kuang img_list" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr class="img_list_title">
+            <th rowspan="2"><img src="$webdb[www_url]/images/userface.png" /></th>
+            <td>罐罐菌</td><td>★★★★☆</td><td style="text-align:right; width:auto">2014-04-10</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="img_list_content">之前没看宣传，就知道有这么一部片子，昨天想看看史诗片，就找来看了下……</td>
+          </tr>
+        </tbody></table>
+      </li>
+	  <li class="nob">
+        <table class="kuang img_list" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr class="img_list_title">
+            <th rowspan="2"><img src="$webdb[www_url]/images/userface.png" /></th>
+            <td>jilan870815</td><td>★★★★★</td><td style="text-align:right; width:auto">2014-04-10</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="img_list_content">行程满意的，时间偏短些，住宿环境非常好的。</td>
+          </tr>
+        </tbody></table>
+      </li>
+	<li class="nob"><a href="#" style="display:block; text-align:center; background:#f1f1f1; margin-top:10px; font-size:12px">查看更多评价</a></li>
+  </ul>
+
+<!--
+EOT;
+}elseif($tab=="1"){
+print <<<EOT
+-->
+    <table class="radio_select" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td><a href="$webdb[www_url]/{$fid}.html?id=$id">产品详情</a></td>
+        <td><a class="select" href="$webdb[www_url]/{$fid}.html?id=$id&tab=1">预订说明</a></td>
+        <td><a href="$webdb[www_url]/{$fid}.html?id=$id&tab=2">行程攻略</a></td>
+      </tr>
+    </table>
+<ul class="round">
+		<li>
+<div class="news_content">
+<strong>费用包含</strong><br />
+1. 交通：往返团队经济舱机票（含税），团队机票一经开出，不得更改、不得签转、不得退票。<br />
+2. 小交通：当地机场至酒店的往返接送服务。<br />
+3. 签证：落地签证。<br />
+4. 住宿：马累一晚加Lux*度假村4晚，具体含餐情况请见页面上方套餐说明。<br />
+<strong>费用不包含</strong><br />
+1. 单房差。<br />
+2. 其他：周边城市如需预定本产品，前往该城市交通敬请自理。<br />
+3. 出入境个人物品海关征税，超重行李的托运费、保管费。<br />
+4. 升级舱位、升级酒店、升级房型等产生的差价。<br />
+5. 因交通延阻、罢工、天气、飞机机器故障、航班取消或更改时间等不可抗力原因所引致的额外费用。<br />
+6. 酒店内洗衣、理发、电话、传真、收费电视、饮品、烟酒等个人消费。<br />
+7. 当地参加的自费以及以上“费用包含”中不包含的其它项目。<br />
+* 建议购买旅游人身意外保险<br />
+</div>
+        </li>
+</ul>
+<!--
+EOT;
+}else{
+print <<<EOT
+-->
+    <table class="radio_select" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td><a class="select" href="$webdb[www_url]/{$fid}.html?id=$id">产品详情</a></td>
+        <td><a href="$webdb[www_url]/{$fid}.html?id=$id&tab=1">预订说明</a></td>
+        <td><a href="$webdb[www_url]/{$fid}.html?id=$id&tab=2">行程攻略</a></td>
+      </tr>
+    </table>
+<ul class="round">
+		<li>
+<div class="news_content">
+<img src="$webdb[www_url]/images/lv1.jpg" />
+马尔代夫LUX*度假村的Beach Villas沙滩屋独栋房型。Beach Villa的卧室、卫生间都更加大气。度蜜月选择沙屋起码要这个房型。Junior Suites太简朴了。
+<img src="$webdb[www_url]/images/lv2.jpg" />
+马尔代夫LUX*度假村的Water Villas水上屋东西两面的加一起一共84间，东面的称Water Villa，71平方米。房间装修中规中矩，卧室面积的确小了点。露台挺大，卫生间正对大海。
+<img src="$webdb[www_url]/images/lv3.jpg" />
+马尔代夫LUX*度假村的Prestige Water Villa98平方米，位于岛西面。是近年新造的一排水屋。卧室采用明朗的色调，纵使心情有一点不快，看到如此清新的色系，阴霾的情绪也会立刻烟消云撒。在此房型的再西南，有一条长长的沙洲，退潮的时候可以淌水过去拍照。沿沙洲漫步是傍晚时候最惬意的事情了，但是记得算好时间，不然天黑了就欣赏不到夕阳的美景了。
+</div>
+</li></ul>
+<!--
+EOT;
+}
+print <<<EOT
+-->
+
+
+
+
+
+
+</div>
+<!--
+EOT;
+?>
+-->

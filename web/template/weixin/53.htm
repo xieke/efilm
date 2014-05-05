@@ -1,0 +1,106 @@
+<!--
+<?php
+print <<<EOT
+-->
+
+
+<!--
+EOT;
+if($job=='1'){
+print <<<EOT
+-->
+<style>
+body{ background:#000}
+</style>
+<div class="ad_head">
+	<img src="$webdb[www_url]/images/ad_1.jpg" />
+    <div class="ad_title">活动专题页--开卡返现 $job22 </div>
+</div>
+<!--
+EOT;
+}elseif($job=='2'){
+print <<<EOT
+-->
+<style>
+body{ background:#137bc4}
+</style>
+<div class="ad_head">
+	<img src="$webdb[www_url]/images/ad_2.jpg" />
+    <div class="ad_title">活动专题页--开卡返现</div>
+</div>
+<!--
+EOT;
+}elseif($job=='3'){
+print <<<EOT
+-->
+<style>
+body{ background:#c2c9db}
+</style>
+<div class="ad_head">
+	<img src="$webdb[www_url]/images/ad_3.jpg" />
+    <div class="ad_title">活动专题页--开卡返现</div>
+</div>
+<!--
+EOT;
+}elseif($job=='4'){
+print <<<EOT
+-->
+<style>
+body{ background:#830c28}
+</style>
+<div class="ad_head">
+	<img src="$webdb[www_url]/images/ad_4.jpg" />
+    <div class="ad_title">活动专题页--开卡返现</div>
+</div>
+<!--
+EOT;
+}else{
+print <<<EOT
+-->
+<style>
+body{ background:#b3042f}
+</style>
+<div class="ad_head">
+	<img src="$webdb[www_url]/images/ad_5.jpg" />
+    <div class="ad_title">活动专题页--开卡返现</div>
+</div>
+<!--
+EOT;
+}
+$job||$job=0;
+$job++;
+if($job==6)refreshto("$webdb[www_url]/59.html","",0);
+print <<<EOT
+-->
+
+
+
+
+
+<div class="cardexplain">
+	<ul class="round">
+		<li style="padding:10px 6px">
+        	<div style="padding:0 10px">
+                <strong>活动：</strong><strong style="color:#FF6600">马年马上开卡，享账户10%返现</strong><br />
+                <strong>时段：</strong>2014年3月1日~2014年3月31日<br />
+                <strong>范围：</strong>线上购卡<br />
+                <strong>兑现：</strong>会员账户自动充值
+            </div>
+            <div class="hr"></div>
+            <div style="padding:0 10px">
+            <div style="font-size: 110%; font-weight:bolder;">活动内容</div>
+            活动期内只要您通过微信完成不限金额、等级的会员卡购买并支付成功，我们将即刻将10%的返回额度充值到您新购买的会员卡中，充值过程完全由系统自动完成。
+            </div>
+        </li>
+	</ul>
+	<ul class="round roundyellow">
+		<li class="gift other_select"><a href="$webdb[www_url]/53.html?job={$job}"><span><strong>我了解了，马上参与</strong></span></a></li>
+	</ul>
+</div>
+
+
+
+<!--
+EOT;
+?>
+-->

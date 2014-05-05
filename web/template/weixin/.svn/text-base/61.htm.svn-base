@@ -1,0 +1,67 @@
+<!--
+<?php
+print <<<EOT
+-->
+
+
+
+<style>
+body{ background:#830c28}
+</style>
+<div class="ad_head">
+	<img src="$webdb[www_url]/images/ad_4.jpg" />
+    <div class="ad_title">活动专题页--开卡返现</div>
+</div>
+
+
+
+<div class="cardexplain">
+
+
+
+	<ul class="round">
+		<li><span class="img_list2"><a href="$webdb[www_url]/list.php?fid=45">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="tags_blue">3D</strong>
+            <div class="img_list2_p">
+            导演：多米尼克·塞纳<br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            上映时间：2014年2月1日<br />
+            原价：<del>￥95</del> &nbsp; 活动价：<strong>￥<strong>35</strong></strong>
+            </div>
+        </a></span></li>
+		<li><span class="img_list2"><a href="$webdb[www_url]/list.php?fid=45">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="tags_imax">3DIMAX</strong>
+            <div class="img_list2_p">
+            导演：多米尼克·塞纳<br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            上映时间：2014年2月1日<br />
+            原价：<del>￥80</del> &nbsp; 活动价：<strong>￥<strong>30</strong></strong>
+            </div>
+        </a></span></li>
+		<li><span class="img_list2"><a href="$webdb[www_url]/list.php?fid=45">
+			<img src="$webdb[www_url]/images/movies.jpg" style="width:90px; height:110px" />
+			<strong>魔女神兵</strong> <strong class="tags_blue">3D</strong>
+            <div class="img_list2_p">
+            导演：多米尼克·塞纳<br />
+            主演：尼古拉斯·凯奇 / 朗·普尔曼<br />
+            上映时间：2014年2月1日<br />
+            原价：<del>￥79</del> &nbsp; 活动价：<strong>￥<strong>25</strong></strong>
+            </div>
+        </a></span></li>
+	</ul>
+
+
+
+
+
+</div>
+
+
+
+
+<!--
+EOT;
+?>
+-->

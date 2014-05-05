@@ -1,0 +1,84 @@
+<!--
+<?php
+print <<<EOT
+-->
+<div class="cardexplain">
+
+
+
+
+
+	<ul class="round">
+		<li id="ajax_load_more"><img src="$wedb[www_url]/images/ajax-loader-16.gif"></li>
+	</ul>
+<script type="text/javascript">
+var ajax_able=true;
+var currentPageNum=0;
+var totalPageCount=99;
+var type="$job";//01.热门，02.冷门
+$(function () {
+		request_list();
+}); 
+
+
+
+
+
+
+
+
+window.onscroll=function(){
+	var a = document.documentElement.scrollTop==0? document.body.clientHeight : document.documentElement.clientHeight;
+	var b = document.documentElement.scrollTop==0? document.body.scrollTop : document.documentElement.scrollTop;
+	var c = document.documentElement.scrollTop==0? document.body.scrollHeight : document.documentElement.scrollHeight;
+	if((a+b==c)&&ajax_able&&(currentPageNum<=totalPageCount)){
+		ajax_able=false;
+		request_list();
+	}else if((a+b==c)&&ajax_able&&(currentPageNum>totalPageCount)){
+		$("#ajax_load_more").html("已经是最后一条记录").show();
+	}
+}
+function request_list(){
+	$("#ajax_load_more").show();
+	$.post("$webdb[www_url]/ajax-hna.json",{"action":"tourpre/rightsSearch","memberId":"","sts":"","beginDate":"","endDate":"","rowsOfPage":10,"currentPageNum":currentPageNum},function(result){
+		if(result.result.resultCode==""){
+			json_insert_html(result.rightsList);
+			totalPageCount=result.page.totalPageCount;
+			currentPageNum++;
+		}else{
+			alert(result.result.resultCode);
+		}
+		$("#ajax_load_more").hide();
+		ajax_able=true;
+	},'json');
+}
+function json_insert_html(result){
+	var html_temp="";
+	$.each(result, function(i,rs){
+		//localStorage['rights'+rs.rightsId]=JSON.stringify(rs);
+		html_temp+='<li><a href="javascript:;" onclick="view_right('+rs.rightsCode+')"><span>权益编号：'+rs.rightsCode+'<br>创建时间：'+rs.createTime+'<br>卡状态：'+rs.cardSts+'<br>支付状态：'+rs.paySts+'<br>还需支付:'+rs.actualPay+' 元<br>订单总金额：'+rs.price+' 元</span></a></li>';
+	});	
+	$("#ajax_load_more").before(html_temp);
+}
+
+
+
+function view_right(rightsCode){
+	show_load("数据加载中，请稍候...");
+	$.post("$webdb[www_url]/ajax-hna.json",{"action":"tourpre/rightsDetail","memberId":"","rightsCode":rightsCode},function(result){
+		close_load();
+		if(result.result.resultCode==""){
+			localStorage['rights'+rightsCode]=JSON.stringify(result);
+			window.location.href='$webdb[www_url]/76.html?rightsCode='+rightsCode;
+		}else{
+			alert(result.result.resultCode);
+		}
+	},'json');
+}
+
+</script>
+</div>
+<!--
+EOT;
+?>
+-->

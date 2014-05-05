@@ -1,0 +1,50 @@
+<!--
+<?php
+print <<<EOT
+-->
+<div class="cardexplain">
+
+
+
+
+	<ul class="round">
+		<li id="goods_a"><a href="$webdb[www_url]/68.html" style="font-size:12px; color:#0080f8"><span class="img_list2" >
+			<img src="$webdb[www_url]/images/ico_add.png" style="width:25px; height:25px" />
+			选购A线产品
+        </span></a></li>
+		<li id="goods_b"><a href="$webdb[www_url]/69.html" style="font-size:12px; color:#0080f8"><span class="img_list2" >
+			<img src="$webdb[www_url]/images/ico_add.png" style="width:25px; height:25px" />
+			选购B线产品
+        </span></a></li>
+	</ul>
+
+
+    <div class="footReturn">
+   	 <input id="to_submit" class="del" value="下一步" type="button" >
+    </div>
+
+
+<script>
+$(function(){
+	if(typeof(localStorage["a"])!='undefined'){
+		var goods=JSON.parse(localStorage.a);
+		$('#goods_a').html('<span class="img_list2"><a href="$webdb[www_url]/68.html"><img src="$webdb[www_url]/images/lv1.jpg" style="width:90px; height:60px; margin-top:4px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;" /><strong> '+goods.name+'</strong> <strong class="tags_blue">'+goods.hotType+'</strong><div class="img_list2_p" style="line-height:100%">酒店：'+goods.hotelStar+' 星级<br />成人价：<strong>￥<strong>'+goods.adultSalePrice+'</strong></strong> &nbsp; 儿童价：<strong>￥<strong>'+goods.childSalePrice+'</strong></strong></div></a></span>');
+	}
+	if(typeof(localStorage["b"])!='undefined'){
+		var goods=JSON.parse(localStorage.b);
+		$('#goods_b').html('<span class="img_list2"><a href="$webdb[www_url]/69.html"><img src="$webdb[www_url]/images/lv1.jpg" style="width:90px; height:60px; margin-top:4px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;" /><strong> '+goods.name+'</strong> <strong class="tags_blue">'+goods.hotType+'</strong><div class="img_list2_p" style="line-height:100%">酒店：'+goods.hotelStar+' 星级<br />成人价：<strong>￥<strong>'+goods.adultSalePrice+'</strong></strong> &nbsp; 儿童价：<strong>￥<strong>'+goods.childSalePrice+'</strong></strong></div></a></span>');
+	}
+	if(typeof(localStorage["a"])!='undefined'&&typeof(localStorage["b"])!='undefined'){
+		$("#to_submit").removeClass("del").addClass("submit");
+	}
+})
+</script>
+
+
+
+
+</div>
+<!--
+EOT;
+?>
+-->
