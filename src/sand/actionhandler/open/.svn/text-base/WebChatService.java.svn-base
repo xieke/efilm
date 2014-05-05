@@ -1,7 +1,6 @@
 package sand.actionhandler.open;
 
 import java.io.BufferedReader;
-
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.math.BigInteger;
@@ -16,6 +15,7 @@ import java.util.Map;
 import javax.servlet.ServletInputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
@@ -41,7 +41,7 @@ public class WebChatService extends ActionHandler {
 		// TODO Auto-generated constructor stub
 	}
 	
-	 final String TOKEN="haodelawson"; 
+	 
 	/**
 	 * 接入
 	 */
@@ -65,7 +65,10 @@ public class WebChatService extends ActionHandler {
 	public String getAccessToken(){
 		return WebChatKit.getAccessToken();//.textTpl 
 	}
-	
+	@Ajax
+	public String getMenu(){
+		return WebChatKit.getMenu();
+	} 	
 	@Ajax
 	public String createMenu(){
 		return WebChatKit.createMenu();
@@ -109,7 +112,8 @@ public class WebChatService extends ActionHandler {
 //            String eventKey = b.getString("EventKey");
 //            String wxid=b.getString("FromUserName");
             
-            
+            if(b==null)
+            	return "";
             if(b.getString("msgtype").equals("event")){
                 //处理菜单事件
                 b=WebChatProcessor.eventProcess(b);
@@ -137,7 +141,7 @@ public class WebChatService extends ActionHandler {
         String signature = this.getParameter("signature");  
         String timestamp = this.getParameter("timestamp");  
         String nonce = this.getParameter("nonce");  
-        String token=TOKEN;  
+        String token=WebChatKit.TOKEN;  
         String[] tmpArr={token,timestamp,nonce};  
         Arrays.sort(tmpArr);  
         String tmpStr=WebChatKit.ArrayToString(tmpArr);  
@@ -162,6 +166,7 @@ public class WebChatService extends ActionHandler {
     	
     	if(this.getCurMethod().equals("access")) return;
     	if(this.getCurMethod().equals("createMenu")) return;
+    	if(this.getCurMethod().equals("getMenu")) return;
     //	else{
     		
     		//检查令牌
@@ -169,7 +174,9 @@ public class WebChatService extends ActionHandler {
     		//取密钥
     		//检查签名
     		//更新令牌最后访问时间
-    	logger.info("session is "+_request.getSession(false).getId());
+    	HttpSession s =_request.getSession(false);
+    	logger.info("session is "+s);
+    	if(s!=null) logger.info("session id is "+s.getId());
     		String token=(String) _request.getSession().getAttribute("token");
     		if(StringUtils.isBlank(token)){
     			

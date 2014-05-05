@@ -33,6 +33,10 @@ import tool.dao.UidGenerator;
 
 public class WebChatKit {
 	
+	public static String TOKEN="haodelawson"; 
+	public static String APP_ID="wxc1e7dabee2a0d0fd"; 
+	public static String APP_SECRET="b3b1884fbc0ad1bbbf5b00224fd5b9e6";
+	
 	static String access_token="";
 	static long token_time=0;
 	static Logger logger = Logger.getLogger(WebChatKit.class);
@@ -131,7 +135,7 @@ public class WebChatKit {
     	 //https://api.weixin.qq.com/cgi-bin/menu/create?access_token=ACCESS_TOKEN
     	String contentType="application/x-www-form-urlencoded";
     	//SSLService sslService;
-    	String url ="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx5c201b08cc44156a&secret=07904025cb6208a1d54e7f9738b345d9";
+    	String url ="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid="+APP_ID+"&secret="+APP_SECRET;
     	SSLService sslService=new SSLService();
     	String str = sslService.sendRequest(url,contentType, "",null);
 		BizObject biz = JsonTool.toBizObj(str);
@@ -155,7 +159,7 @@ public class WebChatKit {
     
     public static String  render(BizObject b){
     	String time = new Date().getTime()+""; 
-            String resultStr = textTpl.format(textTpl, b.getString("fromusername"), b.getString("toUsername"),time, b.getString("msgType"),b.getString("picurl"),b.getString("content"),b.getString("MediaId") );
+            String resultStr = textTpl.format(textTpl, b.getString("fromusername"), b.getString("toUsername"),time, b.getString("msgType"),b.getString("content"),b.getString("MediaId") );
             logger.info("return:"+resultStr);
             return resultStr;
     }
@@ -229,55 +233,58 @@ public class WebChatKit {
 		return biz;
 
     }
+    public static String getMenu(){
+       	String contentType="application/x-www-form-urlencoded";
+       	//SSLService sslService;
+       	url="https://api.weixin.qq.com/cgi-bin/menu/get?access_token="+getAccessToken();
+       	//url ="https://api.weixin.qq.com/cgi-bin/menu/create?access_token="+getAccessToken();
+       			//+"&body="+menu.toString();
+       	SSLService sslService=new SSLService();
+       	String str = sslService.sendRequest(url,contentType, null,null);
+    		BizObject biz = JsonTool.toBizObj(str);
+        	
+        	return biz.toString();
+
+    }
     public static String createMenu(){
     	
     	BizObject menu=new BizObject();
 
     	
-    	ArrayList<BizObject> v = new ArrayList();
-    	ArrayList<BizObject> v1 = new ArrayList();
+    	ArrayList<BizObject> v = new ArrayList(); // menu list 
+    	ArrayList<BizObject> v1 = new ArrayList(); // menu list 2
+
 
     	
     	BizObject b = new BizObject("");
     	b.set("type", "menu");
-    	b.set("name", "我的卡片");
-    	//b.set("key", "adfad1f");
+    	b.set("name", "影片");    	
     	v.add(b);
     	
+    	String url = createUrl("/open.FilmService.home", "");
+    	BizObject b1 = new BizObject("");
+    	b1.set("type", "view");
+    	b1.set("name", "首页");
+    	b1.set("url", url);
+    	//b.set("key", "adfad1f");
+    	v1.add(b1);    	
     	
-    	BizObject b1=new BizObject();
-    	b1.set("type", "click");
-    	b1.set("name", "绑定易生卡");
-    	b1.set("key", "bound");    	
+    	url = createUrl("/open.FilmService.chooseCinema", "");
+    	 b1=new BizObject();
+    	b1.set("type", "view");
+    	b1.set("name", "选择影院");
+    	b1.set("url",url);    	
 
     	v1.add(b1);
+
+    	url = createUrl("/open.FilmService.chooseFilm", "");
     	b1=new BizObject();
-    	b1.set("type", "click");
-    	b1.set("name", "卡余额查询");
-    	b1.set("key", "query");    	
+    	b1.set("type", "view");
+    	b1.set("name", "选择影片");
+    	b1.set("url", url);    	
 
     	v1.add(b1);
-    	b1=new BizObject();
-    	b1.set("type", "click");
-    	b1.set("name", "历史交易查询");
-    	b1.set("key", "hisquery");    	
-
-    	v1.add(b1);
-    	b1=new BizObject();
-    	b1.set("type", "click");
-    	b1.set("name", "更改密码");
-    	b1.set("key", "modpass");    	
-
-    	v1.add(b1);
-    	
-    	b1=new BizObject();
-    	b1.set("type", "click");
-    	b1.set("name", "解除绑定");
-    	b1.set("key", "unbound");    	
-
-    	v1.add(b1);
-
-    	
+    	   	
     	b.set("sub_button", v1);
     	
     	
@@ -285,7 +292,7 @@ public class WebChatKit {
     	
     	b = new BizObject("");
     	b.set("type", "menu");
-    	b.set("name", "商户及活动");
+    	b.set("name", "活动");
     	//b.set("key", "adfad1f");
     	v.add(b);
     	
@@ -294,10 +301,10 @@ public class WebChatKit {
     	
     	b1=new BizObject();
     	b1.set("type", "click");
-    	b1.set("name", "附近商户");
+    	b1.set("name", "活动1");
     	b1.set("key", "nearby");    	
-
     	v1.add(b1);
+    	
     	b1=new BizObject();
     	b1.set("type", "click");
     	b1.set("name", "最新活动");
@@ -310,7 +317,7 @@ public class WebChatKit {
     	
     	b = new BizObject("");
     	b.set("type", "menu");
-    	b.set("name", "卡支付");
+    	b.set("name", "我的");
     	//b.set("key", "adfad2f");
     	//b1.set("key", "charge");    	
     	v.add(b);
@@ -319,15 +326,22 @@ public class WebChatKit {
     	
     	b1=new BizObject();
     	b1.set("type", "click");
-    	b1.set("name", "手机充值");
+    	b1.set("name", "会员卡");
     	b1.set("key", "charge");    	
 
     	v1.add(b1);
+    	
     	b1=new BizObject();
     	b1.set("type", "click");
-    	b1.set("name", "卡充值(稍后推出)");
+    	b1.set("name", "订单");
     	b1.set("key", "cardCharge");    	    	
     	v1.add(b1);
+    	
+    	b1=new BizObject();
+    	b1.set("type", "click");
+    	b1.set("name", "活动");
+    	b1.set("key", "cardCharge");    	    	
+    	v1.add(b1);    	
     	
     	b.set("sub_button", v1);
     	
@@ -336,7 +350,7 @@ public class WebChatKit {
    	 //
    	String contentType="application/x-www-form-urlencoded";
    	//SSLService sslService;
-   	String url ="https://api.weixin.qq.com/cgi-bin/menu/create?access_token="+getAccessToken();
+   	url ="https://api.weixin.qq.com/cgi-bin/menu/create?access_token="+getAccessToken();
    			//+"&body="+menu.toString();
    	SSLService sslService=new SSLService();
    	String str = sslService.sendRequest(url,contentType, menu.toString(),null);
@@ -390,12 +404,14 @@ public class WebChatKit {
 			logger.info(" min is "+min);
 			if (min > Global.wechat_timeout) {
 				Global.exit(userid, token);
-				throw t; // 令牌失效
+				return null;
+				//throw t; // 令牌失效
 			}
 			return userid;
 		}
 		else{
-			throw t; // 令牌失效
+			//throw t; // 令牌失效
+			return null;
 		}
 		//return "";
 

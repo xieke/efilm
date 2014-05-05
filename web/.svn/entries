@@ -1,41 +1,14 @@
 10
 
 dir
-7988
+8003
 svn://10.38.128.105/hnair/film/web
 svn://10.38.128.105/hnair
 
 
 
-2014-05-04T09:06:30.628777Z
-7988
-suliangben
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-39b99a8e-476c-4c4c-b208-63ae6c4dfda7
-
-index.html
-file
-
-
-
-
-2014-04-10T03:47:55.673424Z
-c159b79ad0294ba54c46f6c9343f0a41
-2014-04-10T03:34:11.455661Z
-7936
+2014-05-05T08:02:24.021882Z
+8000
 xieke
 
 
@@ -51,23 +24,7 @@ xieke
 
 
 
-
-
-
-
-
-
-
-3209
-
-template
-dir
-
-js
-dir
-
-img
-dir
+39b99a8e-476c-4c4c-b208-63ae6c4dfda7
 
 scripts
 dir
@@ -115,13 +72,16 @@ xieke
 plugin
 dir
 
-user2
+META-INF
 dir
 
 style
 dir
 
-META-INF
+user2
+dir
+
+theme
 dir
 
 index.jsp
@@ -157,9 +117,6 @@ xieke
 
 
 865
-
-theme
-dir
 
 login.jsp
 file
@@ -230,5 +187,48 @@ xieke
 287
 
 images
+dir
+
+index.html
+file
+
+
+
+
+2014-04-10T03:47:55.673424Z
+c159b79ad0294ba54c46f6c9343f0a41
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3209
+
+template
+dir
+
+js
+dir
+
+img
 dir
 

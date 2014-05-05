@@ -1,7 +1,7 @@
 10
 
 dir
-7988
+8003
 svn://10.38.128.105/hnair/film/src/weibo4j/examples/search
 svn://10.38.128.105/hnair
 
@@ -25,6 +25,74 @@ xieke
 
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
+
+SearchSuggestionsSchools.java
+file
+
+
+
+
+2014-04-10T03:47:58.625424Z
+a1b293a3518b5e20fba52c6c55a5ac35
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+420
+
+SearchSuggestionsStatuses.java
+file
+
+
+
+
+2014-04-10T03:47:58.625424Z
+9b71933d569a4cdd1f1225e741d0ad00
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+448
 
 SearchSuggestionsCompanies.java
 file
@@ -161,72 +229,4 @@ xieke
 
 
 427
-
-SearchSuggestionsSchools.java
-file
-
-
-
-
-2014-04-10T03:47:58.625424Z
-a1b293a3518b5e20fba52c6c55a5ac35
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-420
-
-SearchSuggestionsStatuses.java
-file
-
-
-
-
-2014-04-10T03:47:58.625424Z
-9b71933d569a4cdd1f1225e741d0ad00
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-448
 

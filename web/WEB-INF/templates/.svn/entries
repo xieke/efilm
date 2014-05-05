@@ -1,7 +1,7 @@
 10
 
 dir
-7988
+8003
 svn://10.38.128.105/hnair/film/web/WEB-INF/templates
 svn://10.38.128.105/hnair
 
@@ -25,9 +25,6 @@ xieke
 
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
-
-news
-dir
 
 test.ftl
 file
@@ -62,4 +59,7 @@ xieke
 
 
 111
+
+news
+dir
 

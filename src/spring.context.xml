@@ -16,8 +16,8 @@
 	
 	
 	<context:annotation-config />
-	<bean id="tagService" class="sand.service.basic.service.impl.TagServiceImpl"></bean>
+	<!--<bean id="tagService" class="sand.service.basic.service.impl.TagServiceImpl"></bean>
 	<bean id="newsService" class="sand.service.news.impl.NewsServiceImpl"></bean>
-	<bean id="tagRuleService" class="sand.service.basic.service.impl.TagRuleServiceImpl"></bean>
+	<bean id="tagRuleService" class="sand.service.basic.service.impl.TagRuleServiceImpl"></bean>-->
 	
 </beans>
