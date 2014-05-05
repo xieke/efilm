@@ -388,14 +388,14 @@ public class WebChatKit {
 		
 		InfoException t = new InfoException("您的操作已经超时，请点击下方菜单重新生成请求");
 		if(StringUtils.isBlank(token))
-			throw t;
+			return null;
 
 		Map<String, String> m = Global.SSoCenter;
 
 		String uuid = m.get(token);
 		
 		
-		if(uuid==null)  throw t; // 令牌失效
+		if(uuid==null)  return null; // 令牌失效
 		String[] uids = uuid.split("\\.");
 		if (uids.length == 2) {
 			String userid = uids[0];
