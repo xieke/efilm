@@ -205,7 +205,8 @@ public class WebChatService extends ActionHandler {
     			if(StringUtils.isBlank(this.getParameter("code"))){
         			logger.info("curmethod  "+this._curMethod);
         
-    					this.getCode(WebChatKit.createUrl(this._curMethod));
+        				//this.
+    					this.getCode(WebChatKit.createUrl("/open.FilmService.home"));
 
     				//}
     				
