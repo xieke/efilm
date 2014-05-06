@@ -1,14 +1,14 @@
 10
 
 dir
-8003
+8006
 svn://10.38.128.105/hnair/film/src/sand
 svn://10.38.128.105/hnair
 
 
 
-2014-05-05T08:55:41.344285Z
-8003
+2014-05-05T16:50:00.465467Z
+8006
 xieke
 
 
@@ -26,6 +26,9 @@ xieke
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
 
+test
+dir
+
 scrawler
 dir
 
@@ -42,8 +45,5 @@ depot
 dir
 
 util
-dir
-
-test
 dir
 

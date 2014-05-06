@@ -1,7 +1,7 @@
 10
 
 dir
-8003
+8006
 svn://10.38.128.105/hnair/film/src/weibo4j/examples
 svn://10.38.128.105/hnair
 
@@ -26,25 +26,19 @@ xieke
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
 
-account
-dir
-
-tags
+publicservice
 dir
 
 trends
 dir
 
-publicservice
-dir
-
-oauth2
+comment
 dir
 
 favorites
 dir
 
-comment
+oauth2
 dir
 
 search
@@ -56,18 +50,24 @@ dir
 suggestions
 dir
 
-user
+friendships
 dir
 
 remind
 dir
 
-friendships
+user
 dir
 
 shorturl
 dir
 
 place
+dir
+
+account
+dir
+
+tags
 dir
 

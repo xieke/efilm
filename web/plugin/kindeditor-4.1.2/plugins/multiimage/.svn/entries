@@ -1,7 +1,7 @@
 10
 
 dir
-8003
+8006
 svn://10.38.128.105/hnair/film/web/plugin/kindeditor-4.1.2/plugins/multiimage
 svn://10.38.128.105/hnair
 
@@ -25,6 +25,9 @@ xieke
 
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
+
+images
+dir
 
 multiimage.js
 file
@@ -59,7 +62,4 @@ xieke
 
 
 50592
-
-images
-dir
 

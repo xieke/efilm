@@ -1,7 +1,7 @@
 10
 
 dir
-8003
+8006
 svn://10.38.128.105/hnair/film/src/weibo4j/examples/friendships
 svn://10.38.128.105/hnair
 
@@ -25,142 +25,6 @@ xieke
 
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
-
-GetFriendsByID.java
-file
-
-
-
-
-2014-04-10T03:47:58.669424Z
-0d4e6bab8efbedc79516cf1b249a01dc
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-708
-
-CreateFriendships.java
-file
-
-
-
-
-2014-04-10T03:47:58.669424Z
-b3d91634c67f0f459a7be5d00e72a9e2
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-552
-
-GetFriendsBilateralIds.java
-file
-
-
-
-
-2014-04-10T03:47:58.669424Z
-a3eb2d60340fdf02783c6a4e78515d1b
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-551
-
-GetFriendsBilateral.java
-file
-
-
-
-
-2014-04-10T03:47:58.669424Z
-0fa8922eb7ec2d7afbf0b941a82e06b0
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-777
 
 DestroyFriendshipsDestroyById.java
 file
@@ -196,14 +60,14 @@ xieke
 
 565
 
-GetFollowersIds.java
+GetFriendsBilateral.java
 file
 
 
 
 
 2014-04-10T03:47:58.669424Z
-3088fa16a376d9eb104acdc80dfa0b6a
+0fa8922eb7ec2d7afbf0b941a82e06b0
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -228,7 +92,41 @@ xieke
 
 
 
-552
+777
+
+GetFriendsBilateralIds.java
+file
+
+
+
+
+2014-04-10T03:47:58.669424Z
+a3eb2d60340fdf02783c6a4e78515d1b
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+551
 
 GetFollowers.java
 file
@@ -264,14 +162,14 @@ xieke
 
 784
 
-GetRemark.java
+GetFollowersIds.java
 file
 
 
 
 
 2014-04-10T03:47:58.669424Z
-306e37fa17f2b50f46e4d834d4d375a3
+3088fa16a376d9eb104acdc80dfa0b6a
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -296,7 +194,7 @@ xieke
 
 
 
-517
+552
 
 GetFollowsActive.java
 file
@@ -332,6 +230,40 @@ xieke
 
 661
 
+GetRemark.java
+file
+
+
+
+
+2014-04-10T03:47:58.669424Z
+306e37fa17f2b50f46e4d834d4d375a3
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+517
+
 GetFollowersById.java
 file
 
@@ -365,40 +297,6 @@ xieke
 
 
 773
-
-GetFriendsIdsByName.java
-file
-
-
-
-
-2014-04-10T03:47:58.669424Z
-d131fa62537599d3dfddb94a9998a9d6
-2014-04-10T03:34:11.455661Z
-7936
-xieke
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-558
 
 GetFriendsByName.java
 file
@@ -434,14 +332,14 @@ xieke
 
 722
 
-GetFriendsInCommon.java
+GetFriendsIdsByName.java
 file
 
 
 
 
 2014-04-10T03:47:58.669424Z
-0b40e84f2b2f7d5ae88ee5efee12da0c
+d131fa62537599d3dfddb94a9998a9d6
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -466,7 +364,41 @@ xieke
 
 
 
-779
+558
+
+GetFriendsChainFollowers.java
+file
+
+
+
+
+2014-04-10T03:47:58.669424Z
+2d7e5bb7abf064d80f15985c95bd783f
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+788
 
 GetFriendsIds.java
 file
@@ -502,14 +434,14 @@ xieke
 
 538
 
-GetFriendsChainFollowers.java
+GetFriendsInCommon.java
 file
 
 
 
 
 2014-04-10T03:47:58.669424Z
-2d7e5bb7abf064d80f15985c95bd783f
+0b40e84f2b2f7d5ae88ee5efee12da0c
 2014-04-10T03:34:11.455661Z
 7936
 xieke
@@ -534,5 +466,73 @@ xieke
 
 
 
-788
+779
+
+CreateFriendships.java
+file
+
+
+
+
+2014-04-10T03:47:58.669424Z
+b3d91634c67f0f459a7be5d00e72a9e2
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+552
+
+GetFriendsByID.java
+file
+
+
+
+
+2014-04-10T03:47:58.669424Z
+0d4e6bab8efbedc79516cf1b249a01dc
+2014-04-10T03:34:11.455661Z
+7936
+xieke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+708
 

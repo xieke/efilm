@@ -1,7 +1,7 @@
 10
 
 dir
-8003
+8006
 svn://10.38.128.105/hnair/film/web/plugin/jquery.ztree-3.1/demo/en
 svn://10.38.128.105/hnair
 
@@ -25,6 +25,18 @@ xieke
 
 
 39b99a8e-476c-4c4c-b208-63ae6c4dfda7
+
+super
+dir
+
+exedit
+dir
+
+asyncData
+dir
+
+core
+dir
 
 excheck
 dir
@@ -64,17 +76,5 @@ xieke
 6301
 
 bigdata
-dir
-
-super
-dir
-
-exedit
-dir
-
-asyncData
-dir
-
-core
 dir
 
